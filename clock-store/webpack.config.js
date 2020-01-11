@@ -9,7 +9,7 @@ module.exports = {
     './src/styles/main.scss'
   ],
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, '../'),
     filename: 'js/build.js',
   },
   plugins: [
