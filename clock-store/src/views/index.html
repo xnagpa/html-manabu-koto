@@ -6,10 +6,10 @@
   <body>
     <header class="page-header page-header--main-page">
       <div class="logo">
-        <h1 class="visually--hidden">Магазин часов</h1>
+        <h1 class="visuallyhidden">Магазин часов</h1>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggler">Меню на главной странице</button>
+        <button type="button" class="main-nav__toggler">Показать главное меню</button>
         <ul>
           <li class="main-nav__item">
             <a href="/">Каталог</a>
@@ -27,13 +27,13 @@
       </nav>
       <nav class="service-nav">
         <ul class="service-nav__list">
-          <li class="service-nav__search">
+          <li class="service-nav__item service-nav__item--search">
             <a href="/">Поиск</a>
           </li>
-          <li class="service-nav__favorite-items">
+          <li class="service-nav__item service-nav__item--favorite">
             <a href="/">Избранное</a>
           </li>
-          <li class="service-nav__shopping-cart">
+          <li class="service-nav__item service-nav__item--shopping-cart">
             <a href="/">Корзина</a>
           </li>
         </ul>
@@ -41,13 +41,13 @@
     </header>
 
     <section class="hero">
-      <h2 class="visually--hidden">Новая коллекция</h2>
+      <h2 class="visuallyhidden">Новая коллекция</h2>
 
       <div class="hero-product">
         <div class="hero-product__content">
           <h3 class="hero-product__title">
             Весна/Лето 2019
-            <span class="hero-product__title hero-product__title--size-reduced">
+            <span class="hero-product__subtitle">
               Коллекция
             </span>
           </h3>
@@ -65,13 +65,13 @@
       </div>
 
       <ul class="socials hero__socials">
-        <li class="socials-item socials-item--vk">
+        <li class="socials__item socials__item--vk">
           <button type="button">Расшарить вконтакте</button>
         </li>
-        <li class="socials-item socials-item--fb">
+        <li class="socials__item socials__item--fb">
           <button type="button">Расшарить фейсбук</button>
         </li>
-        <li class="socials-item socials-item--tw">
+        <li class="socials__item socials__item--tw">
           <button type="button">Расшарить твиттер</button>
         </li>
       </ul>
