@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: [
-    './src/views/index.pug',
+    './src/views/index.html',
     './src/styles/main.scss'
   ],
   output: {
@@ -14,7 +14,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/views/index.pug'
+      template: './src/views/index.html'
     }),
     new ExtractTextPlugin({filename: 'style.css'}),
   ],
@@ -31,8 +31,8 @@ module.exports = {
         })
       },
       {
-        test: /\.pug$/,
-        loader: 'pug-loader'
+        test: /\.html$/,
+        loader: 'html-loader'
       },
       {
         test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
