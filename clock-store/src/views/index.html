@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head></head>
+  <head>
+    <title>Интернет магазин часов</title>
+  </head>
   <body>
-    <header class="navigation-menu navigation-menu--main-page">
-      <h1 class="visually--hidden">Магазин часов</h1>
-
-      <nav class="menu">
-        <button class="toggler">Меню на главной странице</button>
+    <header class="page-header page-header--main-page">
+      <div class="logo">
+        <h1 class="visually--hidden">Магазин часов</h1>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggler">Меню на главной странице</button>
         <ul>
-          <li class="menu__item"><a href="/">Каталог</a></li>
-          <li class="menu__item"><a href="/">Акции</a></li>
-          <li class="menu__item"><a href="/">Доставка</a></li>
-          <li class="menu__item"><a href="/">Контакты</a></li>
+          <li class="main-nav__item">
+            <a href="/">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/">Акции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/">Контакты</a>
+          </li>
         </ul>
       </nav>
-
-      <div class="logo"></div>
-
-      <nav class="service-menu">
-        <ul>
-          <li class="service-menu__search"><button>Поиск</button></li>
-          <li class="service-menu__favorite-items"><button>Избранное</button></li>
-          <li class="service-menu__shopping-cart"><button>Корзина</button></li>
+      <nav class="service-nav">
+        <ul class="service-nav__list">
+          <li class="service-nav__search">
+            <a href="/">Поиск</a>
+          </li>
+          <li class="service-nav__favorite-items">
+            <a href="/">Избранное</a>
+          </li>
+          <li class="service-nav__shopping-cart">
+            <a href="/">Корзина</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <section class="hero">
-      <h2 class="visually--hidden">Продукт</h2>
+      <h2 class="visually--hidden">Новая коллекция</h2>
 
       <div class="hero-product">
         <div class="hero-product__content">
-          <p class="hero-product__header">Весна/Лето 2019</p>
-          <p class="hero-product__subheader">Коллекция</p>
-          <p class="hero-product__text">Швейцарские часы в наличии в Москве
-              и с доставкой по всему миру</p>
+          <h3 class="hero-product__title">
+            Весна/Лето 2019
+            <span class="hero-product__title hero-product__title--size-reduced">
+              Коллекция
+            </span>
+          </h3>
+          <p class="hero-product__text">
+              Швейцарские часы в наличии в Москве и с доставкой по всему миру
+          </p>
           <a class="hero-product__link" href="/">Смотреть каталог</a>
         </div>
 
         <div class="hero-view">
           <p class="hero-view__price">22 000 ₽</p>
           <p class="hero-view__dimensions">28 мм диаметр</p>
-          <img class="hero-view__image" src="https://via.placeholder.com/502x804.png"/>
+          <img alt="Часы из коллекции весна/лето 2019" class="hero-view__image" src="https://via.placeholder.com/502x804.png"/>
         </div>
       </div>
 
       <ul class="socials hero__socials">
-        <li class="socials-item socials-item--vk"><button>Расшарить вконтакте</button></li>
-        <li class="socials-item socials-item--fb"><button>Расшарить фейсбук</button></li>
-        <li class="socials-item socials-item--tw"><button>Расшарить твиттер</button></li>
+        <li class="socials-item socials-item--vk">
+          <button type="button">Расшарить вконтакте</button>
+        </li>
+        <li class="socials-item socials-item--fb">
+          <button type="button">Расшарить фейсбук</button>
+        </li>
+        <li class="socials-item socials-item--tw">
+          <button type="button">Расшарить твиттер</button>
+        </li>
       </ul>
     </section>
   </body>
