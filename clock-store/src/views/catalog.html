@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Интернет магазин часов</title>
+    <title>Каталог магазина часов</title>
   </head>
   <body>
-    <header class="page-header page-header--main-page">
+    <header class="page-header page-header--catalog-page">
       <div class="logo">
-        <h1 class="visuallyhidden">Магазин часов</h1>
+        <h1 class="visuallyhidden">Каталог</h1>
       </div>
       <nav class="main-nav">
-        <ul>
+        <ul class="main-nav__items">
           <li class="main-nav__item">
             <a class="main-nav__link" href="/">Каталог</a>
           </li>
@@ -39,65 +39,77 @@
       </nav>
     </header>
 
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs-item">Главная</li>
-      <li class="breadcrumbs-item">Каталог</li>
-      <li class="breadcrumbs-item">Мужские часы</li>
+    <ul class="breadcrumbs-items">
+      <li class="breadcrumbs__item">
+        <a href="/">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="/">Каталог</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="/">Часы</a>
+      </li>
     </ul>
 
     <section class="catalog">
       <h2 class="catalog__title">мужские часы</h2>
 
-      <ul class="controls catalog-controls">
-        <li class="control-item">
-          <div class="control-item__title">Стоимость</div>
-          <div class="control-item__content">
-            Здесь будет range для стоимости
-          </div>
-        </li>
+      <form class="controls catalog-controls">
+        <fieldset class="controls__item">
+          <legend class="control-item__title">Стоимость</legend>
+          Здесь будет слайдер. Но я не знаю как его верстать.
+        </fieldset>
+        <fieldset class="controls__item">
+          <legend class="control-item__title">Бренд</legend>
 
-        <li class="control-item">
-          <div class="control-item__title">Бренд</div>
-          <div class="control-item__content">
-            Здесь будет список чекбоксов
-          </div>
-        </li>
+          <label class="control-item__label" for="teche">Teche</label>
+          <input class="control-item__checkbox" type="checkbox" id="teche" name="teche" checked>
 
-        <li class="control-item">
-          <div class="control-item__title">Механизм</div>
-          <div class="control-item__content">
-            Здесь будет список чекбоксов
-          </div>
-        </li>
+          <label class="control-item__label" for="rado">Rado</label>
+          <input class="control-item__checkbox" type="checkbox" id="rado" name="rado">
 
-        <li class="control-item">
-          <div class="control-item__title">Материал</div>
-          <div class="control-item__content">
-            Здесь будет список чекбоксов
-          </div>
-        </li>
+          <label class="control-item__label" for="bvlgari">Bvlgari</label>
+          <input class="control-item__checkbox" type="checkbox" id="bvlgari" name="bvlgari">
 
-        <li class="control-item">
-          <div class="control-item__title">Цвет</div>
-          <div class="control-item__content">
-            Здесь будет список чекбоксов
-          </div>
-        </li>
+          <label class="control-item__label" for="tissot">Tissot</label>
+          <input class="control-item__checkbox" type="checkbox" id="tissot" name="tissot">
 
-      </ul>
+          <label class="control-item__label" for="omega">Omega</label>
+          <input class="control-item__checkbox" type="checkbox" id="omega" name="omega">
+
+          <label class="control-item__label" for="montblanc">Montblanc</label>
+          <input class="control-item__checkbox" type="checkbox" id="montblanc" name="montblanc">
+
+        </fieldset>
+
+        <fieldset class="controls__item">
+          <legend class="control-item__title" >Механизм</legend>
+        </fieldset>
+
+        <fieldset class="controls__item">
+          <legend class="control-item__title">Материал</legend>
+        </fieldset>
+
+        <fieldset class="controls__item">
+          <legend class="control-item__title">Цвет</legend>
+        </fieldset>
+
+        <input class="control-item__reset" type="button" value="Сбросить фильтр"/>
+        <input class="control-item__submit" type="submit" value="Применить фильтр"/>
+      </form>
 
       <div class="catalog__items">
         Сделаю в следующей итерации
       </div>
     </section>
 
-    <section class="banner">
-      <h2 class="banner__title">подписка на рассылку</h2>
-      <div class="banner__slogan">Получить скидку 10% на первую покупку</div>
-      <form class="banner__subscription">
-        <label class="banner__subscription-label" for="email">Email</label>
-        <input class="banner__subscription-text" id="email" name="email" type="text" >
-        <input class="banner__subscription-submit" type="submit"/>подписаться</input>
+    <section class="subscription">
+      <h2 class="subscription__title">подписка на рассылку</h2>
+      <div class="subscription__slogan">Получить скидку 10% на первую покупку</div>
+      <form class="subscription-container">
+        <label class="subscription-container__label" for="email">Email</label>
+        <input class="subscription-container__text" id="email" name="email" type="text" >
+        <input class="subscription-container__submit" type="submit" value="Подписаться"/>
       </form>
     </section>
 
