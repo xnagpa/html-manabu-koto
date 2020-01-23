@@ -5,9 +5,9 @@
   </head>
   <body>
     <header class="page-header page-header--catalog-page">
-      <div class="logo">
+      <a class="logo">
         <h1 class="visuallyhidden">Каталог</h1>
-      </div>
+      </a>
       <nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__item">
@@ -39,63 +39,117 @@
       </nav>
     </header>
 
-    <ul class="breadcrumbs-items">
+    <ul class="breadcrumbs">
       <li class="breadcrumbs__item">
-        <a href="/">Главная</a>
+        <a class="breadcrumbs__link" href="/">Главная</a>
       </li>
       <li class="breadcrumbs__item">
-        <a href="/">Каталог</a>
+        <a class="breadcrumbs__link" href="/">Каталог</a>
       </li>
       <li class="breadcrumbs__item">
-        <a href="/">Часы</a>
+        <a class="breadcrumbs__link breadcrumbs__link--current" href="/">Мужские часы</a>
       </li>
     </ul>
 
     <section class="catalog">
-      <h2 class="catalog__title">мужские часы</h2>
+      <h2 class="catalog__title">Мужские часы</h2>
 
-      <form class="controls catalog-controls">
-        <fieldset class="controls__item">
-          <legend class="control-item__title">Стоимость</legend>
-          Здесь будет слайдер. Но я не знаю как его верстать.
-        </fieldset>
-        <fieldset class="controls__item">
-          <legend class="control-item__title">Бренд</legend>
-
-          <label class="control-item__label" for="teche">Teche</label>
-          <input class="control-item__checkbox" type="checkbox" id="teche" name="teche" checked>
-
-          <label class="control-item__label" for="rado">Rado</label>
-          <input class="control-item__checkbox" type="checkbox" id="rado" name="rado">
-
-          <label class="control-item__label" for="bvlgari">Bvlgari</label>
-          <input class="control-item__checkbox" type="checkbox" id="bvlgari" name="bvlgari">
-
-          <label class="control-item__label" for="tissot">Tissot</label>
-          <input class="control-item__checkbox" type="checkbox" id="tissot" name="tissot">
-
-          <label class="control-item__label" for="omega">Omega</label>
-          <input class="control-item__checkbox" type="checkbox" id="omega" name="omega">
-
-          <label class="control-item__label" for="montblanc">Montblanc</label>
-          <input class="control-item__checkbox" type="checkbox" id="montblanc" name="montblanc">
-
+      <form class="filter-form" action="https://echo.htmlacademy.ru/">
+        <fieldset class="filter-form__item">
+          <button class="filter-form__toggle">
+            Стоимость
+            <span class="filter-form__toggle-sign">+</span>
+          </button>
+          <!-- А если тут будет 2 инпута? -->
+          <!-- Инпуты должны быть физически или номинально? -->
+          <!-- Почему не может быть fieldset из одного поля?  -->
+          <div class="filter-form__container">
+            <legend class="filter-form__title">Стоимость</legend>
+            <div class="slider">
+              <span class="slider__thumb slider__thumb--min">
+              <span class="slider__thumb slider__thumb--max">
+            </div>
+          </div>
         </fieldset>
 
-        <fieldset class="controls__item">
-          <legend class="control-item__title" >Механизм</legend>
+        <fieldset class="filter-form__item">
+          <button class="filter-form__toggle">
+            Бренд
+            <span class="filter-form__toggle-sign">+</span>
+          </button>
+
+          <div class="filter-form__container">
+            <legend class="filter-form__title">Бренд</legend>
+
+            <ul role="none">
+              <li class="filter-form__list-item">
+                <label class="filter-form__label" for="teche">Teche</label>
+                <input class="filter-form__checkbox" type="checkbox" id="teche" name="teche" checked>
+              </li>
+
+              <li class="filter-form__list-item">
+                <label class="filter-form__label" for="rado">Rado</label>
+                <input class="filter-form__checkbox" type="checkbox" id="rado" name="rado">
+              </li>
+
+              <li class="filter-form__list-item">
+                <label class="filter-form__label" for="bvlgari">Bvlgari</label>
+                <input class="filter-form__checkbox" type="checkbox" id="bvlgari" name="bvlgari">
+              </li>
+
+              <li class="filter-form__list-item">
+                <label class="filter-form__label" for="tissot">Tissot</label>
+                <input class="filter-form__checkbox" type="checkbox" id="tissot" name="tissot">
+              </li>
+
+              <li class="filter-form__list-item">
+                <label class="filter-form__label" for="omega">Omega</label>
+                <input class="filter-form__checkbox" type="checkbox" id="omega" name="omega">
+              </li>
+
+              <li class="filter-form__list-item">
+                <label class="filter-form__label" for="montblanc">Montblanc</label>
+                <input class="filter-form__checkbox" type="checkbox" id="montblanc" name="montblanc">
+              </li>
+            </ul>
+          </div>
         </fieldset>
 
-        <fieldset class="controls__item">
-          <legend class="control-item__title">Материал</legend>
+        <fieldset class="filter-form__item">
+          <button class="filter-form__toggle">
+            Механизм
+            <span class="filter-form__toggle-sign">+</span>
+          </button>
+
+          <div class="filter-form__container">
+            <legend class="filter-form__title" >Механизм</legend>
+          </div>
         </fieldset>
 
-        <fieldset class="controls__item">
-          <legend class="control-item__title">Цвет</legend>
+        <fieldset class="filter-form__item">
+          <button class="filter-form__toggle">
+            Материал
+            <span class="filter-form__toggle-sign">+</span>
+          </button>
+
+          <div class="filter-form__container">
+            <legend class="filter-form__title">Материал</legend>
+          </div>
         </fieldset>
 
-        <input class="control-item__reset" type="button" value="Сбросить фильтр"/>
-        <input class="control-item__submit" type="submit" value="Применить фильтр"/>
+        <fieldset class="filter-form__item">
+          <button class="filter-form__toggle">
+            Цвет
+            <span class="filter-form__toggle-sign">+</span>
+          </button>
+
+          <div class="filter-form__container">
+            <legend class="filter-form__title">Цвет</legend>
+          </div>
+        </fieldset>
+
+        <button class="filter-form__reset" type="reset">Сбросить фильтр</button>
+        <button class="filter-form__submit" type="submit">Применить фильтр</button>
       </form>
 
       <div class="catalog__items">
@@ -104,12 +158,12 @@
     </section>
 
     <section class="subscription">
-      <h2 class="subscription__title">подписка на рассылку</h2>
+      <h2 class="subscription__title">Подписка на рассылку</h2>
       <div class="subscription__slogan">Получить скидку 10% на первую покупку</div>
-      <form class="subscription-container">
-        <label class="subscription-container__label" for="email">Email</label>
-        <input class="subscription-container__text" id="email" name="email" type="text" >
-        <input class="subscription-container__submit" type="submit" value="Подписаться"/>
+      <form class="subscription__form">
+        <label class="subscription__label" for="email">Email</label>
+        <input class="subscription__text" id="email" name="email" type="text" required>
+        <button class="subscription__submit" type="submit">Подписаться</button>
       </form>
     </section>
 
@@ -121,7 +175,7 @@
       <h2>Контакты и важные ссылки</h2>
 
       <div class="footer__block">
-        <h3 class="footer__block-title visuallyhidden">контакты компании</h3>
+        <h3 class="footer__block-title visuallyhidden">Контакты компании</h3>
 
         <div class="logo logo--footer"></div>
 
@@ -132,7 +186,7 @@
       </div>
 
       <div class="footer__block">
-        <h3 class="footer__block-title">о компании</h3>
+        <h3 class="footer__block-title">О компании</h3>
 
         <ul class="footer__list">
           <li class="footer__list-item">Наши магазины</li>
@@ -143,7 +197,7 @@
       </div>
 
       <div class="footer__block">
-        <h3 class="footer__block-title">покупателям</h3>
+        <h3 class="footer__block-title">Покупателям</h3>
 
         <ul class="footer__list">
           <li class="footer__list-item">Каталог товаров</li>
@@ -154,7 +208,7 @@
       </div>
 
       <div class="footer__block">
-        <h3 class="footer__block-title">оплата и доставка</h3>
+        <h3 class="footer__block-title">Оплата и доставка</h3>
 
         <ul class="footer__list">
           <li class="footer__list-item">Способы оплаты</li>
