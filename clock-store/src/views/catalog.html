@@ -8,17 +8,22 @@
       <a href="/" class="logo">
         <h1 class="visuallyhidden">Каталог</h1>
       </a>
+
       <nav class="main-nav">
         <ul class="main-nav__items">
+
           <li class="main-nav__item">
             <a class="main-nav__link" href="/">Каталог</a>
           </li>
+
           <li class="main-nav__item">
             <a class="main-nav__link" href="/">Акции</a>
           </li>
+
           <li class="main-nav__item">
             <a class="main-nav__link" href="/">Доставка</a>
           </li>
+
           <li class="main-nav__item">
             <a class="main-nav__link" href="/">Контакты</a>
           </li>
@@ -26,12 +31,15 @@
       </nav>
       <nav class="service-nav">
         <ul class="service-nav__items">
+
           <li class="service-nav__item service-nav__item--search">
             <a class="service-nav__link" href="/">Поиск</a>
           </li>
+
           <li class="service-nav__item service-nav__item--favorite">
             <a class="service-nav__link" href="/">Избранное</a>
           </li>
+
           <li class="service-nav__item service-nav__item--shopping-cart">
             <a class="service-nav__link" href="/">Корзина</a>
           </li>
@@ -43,9 +51,11 @@
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="/">Главная</a>
       </li>
+
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="/">Каталог</a>
       </li>
+
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link breadcrumbs__link--current" href="/">Мужские часы</a>
       </li>
@@ -55,100 +65,101 @@
       <h2 class="catalog__title">Мужские часы</h2>
 
       <form class="filter-form" action="https://echo.htmlacademy.ru/">
-        <fieldset class="filter-form__item">
+        <div class="filter-form__group">
+          <label class="filter-form__title">Стоимость</label>
           <button class="filter-form__toggle">
             Стоимость
             <span class="filter-form__toggle-sign">+</span>
           </button>
-          <!-- А если тут будет 2 инпута? -->
-          <!-- Инпуты должны быть физически или номинально? -->
-          <!-- Почему не может быть fieldset из одного поля?  -->
+
           <div class="filter-form__container">
-            <legend class="filter-form__title">Стоимость</legend>
             <div class="slider">
               <span class="slider__thumb slider__thumb--min">
               <span class="slider__thumb slider__thumb--max">
             </div>
           </div>
+        </div>
+
+        <fieldset class="filter-form__group">
+          <legend class="filter-form__title">
+            <button type="button" class="filter-form__toggle">
+              Бренд
+              <span class="filter-form__toggle-sign">+</span>
+            </button>
+          </legend>
+
+          <ul class="filter-form__container" role="none">
+            <li class="filter-form__group">
+              <label class="filter-form__label" for="teche">Teche</label>
+              <input class="filter-form__checkbox"
+                type="checkbox" id="teche" name="teche" checked>
+            </li>
+
+            <li class="filter-form__group">
+              <label class="filter-form__label" for="rado">Rado</label>
+              <input class="filter-form__checkbox" type="checkbox" id="rado" name="rado">
+            </li>
+
+            <li class="filter-form__group">
+              <label class="filter-form__label" for="bvlgari">Bvlgari</label>
+              <input class="filter-form__checkbox" type="checkbox" id="bvlgari" name="bvlgari">
+            </li>
+
+            <li class="filter-form__group">
+              <label class="filter-form__label" for="tissot">Tissot</label>
+              <input class="filter-form__checkbox" type="checkbox" id="tissot" name="tissot">
+            </li>
+
+            <li class="filter-form__group">
+              <label class="filter-form__label" for="omega">Omega</label>
+              <input class="filter-form__checkbox" type="checkbox" id="omega" name="omega">
+            </li>
+
+            <li class="filter-form__group">
+              <label class="filter-form__label" for="montblanc">Montblanc</label>
+              <input class="filter-form__checkbox" type="checkbox" id="montblanc" name="montblanc">
+            </li>
+          </ul>
         </fieldset>
 
-        <fieldset class="filter-form__item">
-          <button class="filter-form__toggle">
-            Бренд
-            <span class="filter-form__toggle-sign">+</span>
-          </button>
+        <fieldset class="filter-form__group">
+          <legend class="filter-form__title" >
+            <button class="filter-form__toggle">
+              Механизм
+              <span class="filter-form__toggle-sign">+</span>
+            </button>
+          </legend>
 
           <div class="filter-form__container">
-            <legend class="filter-form__title">Бренд</legend>
-
-            <ul role="none">
-              <li class="filter-form__list-item">
-                <label class="filter-form__label" for="teche">Teche</label>
-                <input class="filter-form__checkbox" type="checkbox" id="teche" name="teche" checked>
-              </li>
-
-              <li class="filter-form__list-item">
-                <label class="filter-form__label" for="rado">Rado</label>
-                <input class="filter-form__checkbox" type="checkbox" id="rado" name="rado">
-              </li>
-
-              <li class="filter-form__list-item">
-                <label class="filter-form__label" for="bvlgari">Bvlgari</label>
-                <input class="filter-form__checkbox" type="checkbox" id="bvlgari" name="bvlgari">
-              </li>
-
-              <li class="filter-form__list-item">
-                <label class="filter-form__label" for="tissot">Tissot</label>
-                <input class="filter-form__checkbox" type="checkbox" id="tissot" name="tissot">
-              </li>
-
-              <li class="filter-form__list-item">
-                <label class="filter-form__label" for="omega">Omega</label>
-                <input class="filter-form__checkbox" type="checkbox" id="omega" name="omega">
-              </li>
-
-              <li class="filter-form__list-item">
-                <label class="filter-form__label" for="montblanc">Montblanc</label>
-                <input class="filter-form__checkbox" type="checkbox" id="montblanc" name="montblanc">
-              </li>
-            </ul>
           </div>
         </fieldset>
 
-        <fieldset class="filter-form__item">
-          <button class="filter-form__toggle">
-            Механизм
-            <span class="filter-form__toggle-sign">+</span>
-          </button>
+        <fieldset class="filter-form__group">
+          <legend class="filter-form__title">
+            <button class="filter-form__toggle">
+              Материал
+              <span class="filter-form__toggle-sign">+</span>
+            </button>
+          </legend>
 
           <div class="filter-form__container">
-            <legend class="filter-form__title" >Механизм</legend>
           </div>
         </fieldset>
 
-        <fieldset class="filter-form__item">
-          <button class="filter-form__toggle">
-            Материал
-            <span class="filter-form__toggle-sign">+</span>
-          </button>
+        <fieldset class="filter-form__group">
+          <legend class="filter-form__title">
+            <button class="filter-form__toggle">
+              Цвет
+              <span class="filter-form__toggle-sign">+</span>
+            </button>
+          </legend>
 
           <div class="filter-form__container">
-            <legend class="filter-form__title">Материал</legend>
-          </div>
-        </fieldset>
-
-        <fieldset class="filter-form__item">
-          <button class="filter-form__toggle">
-            Цвет
-            <span class="filter-form__toggle-sign">+</span>
-          </button>
-
-          <div class="filter-form__container">
-            <legend class="filter-form__title">Цвет</legend>
           </div>
         </fieldset>
 
         <button class="filter-form__reset" type="reset">Сбросить фильтр</button>
+
         <button class="filter-form__submit" type="submit">Применить фильтр</button>
       </form>
 
@@ -158,11 +169,21 @@
     </section>
 
     <section class="subscription">
-      <h2 class="subscription__title">Подписка на рассылку</h2>
-      <div class="subscription__slogan">Получить скидку 10% на первую покупку</div>
+      <h2 class="subscription__title">
+        Подписка на рассылку
+      </h2>
+
+      <div class="subscription__slogan">
+        Получить скидку 10% на первую покупку
+      </div>
+
       <form class="subscription__form">
-        <label class="subscription__label" for="email">Email</label>
-        <input class="subscription__text" id="email" name="email" type="text" required>
+        <label class="subscription__label" for="email">
+          Email
+        </label>
+
+        <input class="subscription__text" id="email" name="email" type="email" required>
+
         <button class="subscription__submit" type="submit">Подписаться</button>
       </form>
     </section>
@@ -180,8 +201,8 @@
         <div class="logo logo--footer"></div>
 
         <ul class="footer__list">
-          <li class="footer__list-item">8 (499) 450-47-97</li>
-          <li class="footer__list-item">info@conquest.watch.ru</li>
+          <li class="footer__item">8 (499) 450-47-97</li>
+          <li class="footer__item">info@conquest.watch.ru</li>
         </ul>
       </div>
 
@@ -189,10 +210,10 @@
         <h3 class="footer__block-title">О компании</h3>
 
         <ul class="footer__list">
-          <li class="footer__list-item">Наши магазины</li>
-          <li class="footer__list-item">Вакансии</li>
-          <li class="footer__list-item">Сертификаты</li>
-          <li class="footer__list-item">Отзывы</li>
+          <li class="footer__item">Наши магазины</li>
+          <li class="footer__item">Вакансии</li>
+          <li class="footer__item">Сертификаты</li>
+          <li class="footer__item">Отзывы</li>
         </ul>
       </div>
 
@@ -200,10 +221,10 @@
         <h3 class="footer__block-title">Покупателям</h3>
 
         <ul class="footer__list">
-          <li class="footer__list-item">Каталог товаров</li>
-          <li class="footer__list-item">Как заказать?</li>
-          <li class="footer__list-item">FAQ</li>
-          <li class="footer__list-item">Корпоративным клиентам</li>
+          <li class="footer__item">Каталог товаров</li>
+          <li class="footer__item">Как заказать?</li>
+          <li class="footer__item">FAQ</li>
+          <li class="footer__item">Корпоративным клиентам</li>
         </ul>
       </div>
 
@@ -211,10 +232,10 @@
         <h3 class="footer__block-title">Оплата и доставка</h3>
 
         <ul class="footer__list">
-          <li class="footer__list-item">Способы оплаты</li>
-          <li class="footer__list-item">Время доставки</li>
-          <li class="footer__list-item">Гарантии и ремонт</li>
-          <li class="footer__list-item">Возврат и компенсация</li>
+          <li class="footer__item">Способы оплаты</li>
+          <li class="footer__item">Время доставки</li>
+          <li class="footer__item">Гарантии и ремонт</li>
+          <li class="footer__item">Возврат и компенсация</li>
         </ul>
       </div>
 
