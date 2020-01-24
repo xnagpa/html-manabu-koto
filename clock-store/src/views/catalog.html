@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Каталог магазина часов</title>
+  </head>
+  <body>
+    <header class="page-header page-header--catalog-page">
+      <a href="/" class="logo">
+        <h1 class="visuallyhidden">Каталог</h1>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="/">Каталог</a>
+          </li>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="/">Акции</a>
+          </li>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="/">Доставка</a>
+          </li>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="/">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="service-nav">
+        <ul class="service-nav__items">
+
+          <li class="service-nav__item service-nav__item--search">
+            <a class="service-nav__link" href="/">Поиск</a>
+          </li>
+
+          <li class="service-nav__item service-nav__item--favorite">
+            <a class="service-nav__link" href="/">Избранное</a>
+          </li>
+
+          <li class="service-nav__item service-nav__item--shopping-cart">
+            <a class="service-nav__link" href="/">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="/">Главная</a>
+      </li>
+
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="/">Каталог</a>
+      </li>
+
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link--current" href="/">Мужские часы</a>
+      </li>
+    </ul>
+
+    <section class="catalog">
+      <h2 class="catalog__title">Мужские часы</h2>
+
+      <form class="filter-form" action="https://echo.htmlacademy.ru/">
+        <div class="filter-form__group">
+          <label class="filter-form__title">Стоимость</label>
+
+          <button type="button" class="filter-form__toggle">
+            <span class="visuallyhidden">Открыть список</span>
+            <span class="filter-form__toggle-sign">+</span>
+          </button>
+
+          <div class="filter-form__container">
+            <div class="slider">
+              <div class="slider__thumb slider__thumb--min"></div>
+              <div class="slider__thumb slider__thumb--max"></div>
+            </div>
+          </div>
+        </div>
+
+        <fieldset class="filter-form__group">
+          <legend class="filter-form__title">
+            Бренд
+            <button type="button" class="filter-form__toggle">
+              <span class="visuallyhidden">Открыть список</span>
+              <span class="filter-form__toggle-sign">+</span>
+            </button>
+          </legend>
+
+          <ul class="filter-form__items" role="none presentation">
+            <li class="filter-form__item">
+              <label class="filter-form__label" for="teche">Teche</label>
+              <input class="filter-form__checkbox"
+                type="checkbox" value="teche" id="teche" name="watches" checked>
+            </li>
+
+            <li class="filter-form__item">
+              <label class="filter-form__label" for="rado">Rado</label>
+              <input class="filter-form__checkbox"
+                type="checkbox" value="rado" id="rado" name="watches">
+            </li>
+
+            <li class="filter-form__item">
+              <label class="filter-form__label" for="bvlgari">Bvlgari</label>
+              <input class="filter-form__checkbox"
+                type="checkbox" value="bvlgari" id="bvlgari" name="watches">
+            </li>
+
+            <li class="filter-form__item">
+              <label class="filter-form__label" for="tissot">Tissot</label>
+              <input class="filter-form__checkbox"
+                type="checkbox" value="tissot" id="tissot" name="watches">
+            </li>
+
+            <li class="filter-form__item">
+              <label class="filter-form__label" for="omega">Omega</label>
+              <input class="filter-form__checkbox"
+                type="checkbox" value="omega" id="omega" name="watches">
+            </li>
+
+            <li class="filter-form__item">
+              <label class="filter-form__label" for="montblanc">Montblanc</label>
+              <input class="filter-form__checkbox"
+                type="checkbox" value="montblanc" id="montblanc" name="watches">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="filter-form__group">
+          <legend class="filter-form__title" >
+            Механизм
+            <button type="button" class="filter-form__toggle">
+              <span class="visuallyhidden">Открыть список</span>
+              <span class="filter-form__toggle-sign">+</span>
+            </button>
+          </legend>
+
+          <div class="filter-form__container">
+          </div>
+        </fieldset>
+
+        <fieldset class="filter-form__group">
+          <legend class="filter-form__title">
+            Материал
+            <button type="button" class="filter-form__toggle">
+              <span class="visuallyhidden">Открыть список</span>
+              <span class="filter-form__toggle-sign">+</span>
+            </button>
+          </legend>
+
+          <div class="filter-form__container">
+          </div>
+        </fieldset>
+
+        <fieldset class="filter-form__group">
+          <legend class="filter-form__title">
+            Цвет
+            <button type="button" class="filter-form__toggle">
+              <span class="visuallyhidden">Открыть список</span>
+              <span class="filter-form__toggle-sign">+</span>
+            </button>
+          </legend>
+
+          <div class="filter-form__container">
+          </div>
+        </fieldset>
+
+        <button class="filter-form__reset" type="reset">Сбросить фильтр</button>
+
+        <button class="filter-form__submit" type="submit">Применить фильтр</button>
+      </form>
+
+      <div class="catalog__items">
+        Сделаю в следующей итерации
+      </div>
+    </section>
+
+    <section class="subscription">
+      <h2 class="subscription__title">
+        Подписка на рассылку
+      </h2>
+
+      <div class="subscription__slogan">
+        Получить скидку 10% на первую покупку
+      </div>
+
+      <form class="subscription__form">
+        <label class="subscription__label" for="email">
+          Email
+        </label>
+
+        <input class="subscription__text" id="email" name="email" type="email" required>
+
+        <button class="subscription__submit" type="submit">Подписаться</button>
+      </form>
+    </section>
+
+    <section class="extra-items">
+      В следующей итерации
+    </section>
+
+    <footer class="footer">
+      <h2>Контакты и важные ссылки</h2>
+
+      <div class="footer__block">
+        <h3 class="footer__block-title visuallyhidden">Контакты компании</h3>
+
+        <div class="logo logo--footer"></div>
+
+        <ul class="footer__list">
+          <li class="footer__item">8 (499) 450-47-97</li>
+          <li class="footer__item">info@conquest.watch.ru</li>
+        </ul>
+      </div>
+
+      <div class="footer__block">
+        <h3 class="footer__block-title">О компании</h3>
+
+        <ul class="footer__list">
+          <li class="footer__item">Наши магазины</li>
+          <li class="footer__item">Вакансии</li>
+          <li class="footer__item">Сертификаты</li>
+          <li class="footer__item">Отзывы</li>
+        </ul>
+      </div>
+
+      <div class="footer__block">
+        <h3 class="footer__block-title">Покупателям</h3>
+
+        <ul class="footer__list">
+          <li class="footer__item">Каталог товаров</li>
+          <li class="footer__item">Как заказать?</li>
+          <li class="footer__item">FAQ</li>
+          <li class="footer__item">Корпоративным клиентам</li>
+        </ul>
+      </div>
+
+      <div class="footer__block">
+        <h3 class="footer__block-title">Оплата и доставка</h3>
+
+        <ul class="footer__list">
+          <li class="footer__item">Способы оплаты</li>
+          <li class="footer__item">Время доставки</li>
+          <li class="footer__item">Гарантии и ремонт</li>
+          <li class="footer__item">Возврат и компенсация</li>
+        </ul>
+      </div>
+
+    </footer>
+  </body>
+</html>
