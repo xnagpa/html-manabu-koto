@@ -67,7 +67,8 @@
       <form class="filter-form" action="https://echo.htmlacademy.ru/">
         <div class="filter-form__group">
           <label class="filter-form__title">Стоимость</label>
-          <button class="filter-form__toggle">
+
+          <button type="button" class="filter-form__toggle">
             <span class="visuallyhidden">Открыть список</span>
             <span class="filter-form__toggle-sign">+</span>
           </button>
@@ -89,44 +90,49 @@
             </button>
           </legend>
 
-          <ul class="filter-form__container" role="none">
-            <li class="filter-form__group">
+          <ul class="filter-form__items" role="none">
+            <li class="filter-form__item">
               <label class="filter-form__label" for="teche">Teche</label>
               <input class="filter-form__checkbox"
-                type="checkbox" value="teche" name="teche" checked>
+                type="checkbox" value="teche" name="watches" checked>
             </li>
 
-            <li class="filter-form__group">
+            <li class="filter-form__item">
               <label class="filter-form__label" for="rado">Rado</label>
-              <input class="filter-form__checkbox" type="checkbox" value="rado" name="rado">
+              <input class="filter-form__checkbox"
+                type="checkbox" value="rado" name="watches">
             </li>
 
-            <li class="filter-form__group">
+            <li class="filter-form__item">
               <label class="filter-form__label" for="bvlgari">Bvlgari</label>
-              <input class="filter-form__checkbox" type="checkbox" value="bvlgari" name="bvlgari">
+              <input class="filter-form__checkbox"
+                type="checkbox" value="bvlgari" name="watches">
             </li>
 
-            <li class="filter-form__group">
+            <li class="filter-form__item">
               <label class="filter-form__label" for="tissot">Tissot</label>
-              <input class="filter-form__checkbox" type="checkbox" value="tissot" name="tissot">
+              <input class="filter-form__checkbox"
+                type="checkbox" value="tissot" name="watches">
             </li>
 
-            <li class="filter-form__group">
+            <li class="filter-form__item">
               <label class="filter-form__label" for="omega">Omega</label>
-              <input class="filter-form__checkbox" type="checkbox" value="omega" name="omega">
+              <input class="filter-form__checkbox"
+                type="checkbox" value="omega" name="watches">
             </li>
 
-            <li class="filter-form__group">
+            <li class="filter-form__item">
               <label class="filter-form__label" for="montblanc">Montblanc</label>
-              <input class="filter-form__checkbox" type="checkbox" value="montblanc" name="montblanc">
+              <input class="filter-form__checkbox"
+                type="checkbox" value="montblanc" name="watches">
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="filter-form__group">
-          <legend class="filter-form__title">
+          <legend class="filter-form__title" >
             Механизм
-            <button class="filter-form__toggle">
+            <button type="button" class="filter-form__toggle">
               <span class="visuallyhidden">Открыть список</span>
               <span class="filter-form__toggle-sign">+</span>
             </button>
@@ -139,7 +145,7 @@
         <fieldset class="filter-form__group">
           <legend class="filter-form__title">
             Материал
-            <button class="filter-form__toggle">
+            <button type="button" class="filter-form__toggle">
               <span class="visuallyhidden">Открыть список</span>
               <span class="filter-form__toggle-sign">+</span>
             </button>
@@ -152,7 +158,7 @@
         <fieldset class="filter-form__group">
           <legend class="filter-form__title">
             Цвет
-            <button class="filter-form__toggle">
+            <button type="button" class="filter-form__toggle">
               <span class="visuallyhidden">Открыть список</span>
               <span class="filter-form__toggle-sign">+</span>
             </button>
