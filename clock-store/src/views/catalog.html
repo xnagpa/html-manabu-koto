@@ -173,8 +173,51 @@
         <button class="filter-form__submit" type="submit">Применить фильтр</button>
       </form>
 
-      <div class="catalog__items">
-        Сделаю в следующей итерации
+      <ul class="goods catalog__items">
+        <h2 class="visuallyhidden">Список моделей часов</h2>
+
+        <li class="goods-item">
+
+          <div class="goods-item__info">
+
+            <h3 class="goods-item__title">Techne</h3>
+
+            <div class="goods-item__price">12 700</div>
+          </div>
+
+          <div class="goods-item__buttons">
+
+            <button class="goods-item__favourite">
+              <span class="visuallyhidden">Добавить в избранное</span>
+            </button>
+
+            <button class="goods-item__cart">
+              <span class="visuallyhidden">Добавить в корзину</span>
+            </button>
+          </div>
+
+          <img alt="Омерзительные часы" class="goods-item__image" src="https://via.placeholder.com/127x303.png"/>
+        </li>
+
+        <li class="goods-item goods-item--banner">
+          <div class="goods-item__info">
+
+            <h3 class="goods-item__title">-20%</h3>
+
+            <div class="goods-item__price">На вторую позицию в чеке</div>
+
+          </div>
+        </li>
+      </ul>
+
+      <div class="catalog-controls">
+        <button type="button" class="catalog-controls__arrow"> &lt; </button>
+        <span class="catalog-controls__counter"> 1 </span>
+        <span class="catalog-controls__counter"> 2 </span>
+        <span class="catalog-controls__counter"> 3 </span>
+        <span class="catalog-controls__counter"> ... </span>
+        <span class="catalog-controls__counter"> 12 </span>
+        <button type="button" class="catalog-controls__arrow"> > </button>
       </div>
     </section>
 
@@ -199,7 +242,40 @@
     </section>
 
     <section class="extra-items">
-      В следующей итерации
+      <h2 class="extra-items__title">Ремешки</h2>
+
+      <a class="extra-items__link">Смотреть все</a>
+      <div class="extra-items__container">
+        <button class="extra-items__arrow">&lt;</button>
+
+        <ul class="goods extra-items__items">
+          <li class="goods-item">
+
+            <div class="goods-item__info">
+
+              <h3 class="goods-item__title">Techne</h3>
+
+              <div class="goods-item__price">12 700</div>
+            </div>
+
+            <div class="goods-item__buttons">
+
+              <button class="goods-item__favorite">
+                <span class="visuallyhidden">Добавить в избранное</span>
+              </button>
+
+              <button class="goods-item__cart">
+                <span class="visuallyhidden">Добавить в корзину</span>
+              </button>
+            </div>
+
+            <img alt="Безвкусные часы" class="goods-item__image" src="https://via.placeholder.com/127x303.png"/>
+          </li>
+        </ul>
+
+        <button class="extra-items__arrow">></button>
+      </div>
+
     </section>
 
     <footer class="footer">
