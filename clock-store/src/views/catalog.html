@@ -73,9 +73,9 @@
           </button>
 
           <div class="filter-form__container">
-            <div class="slider">
-              <div class="slider__thumb slider__thumb--min"></div>
-              <div class="slider__thumb slider__thumb--max"></div>
+            <div class="range">
+              <div class="range__thumb range__thumb--min"></div>
+              <div class="range__thumb range__thumb--max"></div>
             </div>
           </div>
         </div>
@@ -237,36 +237,39 @@
       </form>
     </section>
 
-    <section class="extra-items">
-      <h2 class="extra-items__title">Ремешки</h2>
+    <section class="accessories">
+      <h2 class="accessories__title">Ремешки</h2>
 
-      <a class="extra-items__link">Смотреть все</a>
-      <div class="extra-items__slider">
-        <button type="button" class="extra-items__arrow">&lt;</button>
+      <a class="accessories__link">Смотреть все</a>
+      <div class="slider slider--accessories-slider">
+        <ul class="slider__items">
+          <li class="slider__item">
+            <div class="product">
+              <div class="product__info">
+                <h3 class="product__title">Techne</h3>
 
-        <ul class="goods extra-items__items">
-          <li class="goods-item">
-            <div class="goods-item__info">
-              <h3 class="goods-item__title">Techne</h3>
+                <div class="product__price">12 700</div>
+              </div>
 
-              <div class="goods-item__price">12 700</div>
+              <div class="product__actions">
+                <button type="button" class="product__action product__action--add-to-favorites">
+                  <span class="visuallyhidden">Добавить в избранное</span>
+                </button>
+
+                <button type="button" class="product__action product__action--add-to-cart">
+                  <span class="visuallyhidden">Добавить в корзину</span>
+                </button>
+              </div>
+
+              <img alt="Безвкусные часы" class="product__image" src="https://via.placeholder.com/127x303.png"/>
             </div>
-
-            <div class="goods-item__buttons">
-              <button type="button" class="goods-item__favorite">
-                <span class="visuallyhidden">Добавить в избранное</span>
-              </button>
-
-              <button type="button" class="goods-item__cart">
-                <span class="visuallyhidden">Добавить в корзину</span>
-              </button>
-            </div>
-
-            <img alt="Безвкусные часы" class="goods-item__image" src="https://via.placeholder.com/127x303.png"/>
           </li>
         </ul>
 
-        <button type="button" class="extra-items__arrow">></button>
+        <div class="slider-controls">
+          <button type="button" class="slider-controls__arrow"> &lt; </button>
+          <button type="button" class="slider-controls__arrow"> > </button>
+        </div>
       </div>
 
     </section>
