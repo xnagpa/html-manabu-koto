@@ -4,9 +4,10 @@
     <title>Каталог магазина часов</title>
   </head>
   <body>
-    <header class="page-header page-header--catalog-page">
+    <header class="page-header">
+      <h1 class="visuallyhidden">Каталог</h1>
       <a href="/" class="logo">
-        <h1 class="visuallyhidden">Каталог</h1>
+        На главную
       </a>
 
       <nav class="main-nav">
@@ -46,280 +47,318 @@
       </nav>
     </header>
 
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="/">Главная</a>
-      </li>
+    <main class="page-main">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="/">Главная</a>
+        </li>
 
-      <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="/">Каталог</a>
-      </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="/">Каталог</a>
+        </li>
 
-      <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link breadcrumbs__link--current" href="/">Мужские часы</a>
-      </li>
-    </ul>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--current" href="/">Мужские часы</a>
+        </li>
+      </ul>
 
-    <section class="catalog">
-      <h2 class="catalog__title">Мужские часы</h2>
+      <section class="page-section catalog">
+        <h2 class="page-section__title catalog__title">Мужские часы</h2>
 
-      <form class="filter-form" action="https://echo.htmlacademy.ru/">
-        <div class="filter-form__group">
-          <label class="filter-form__title">Стоимость</label>
+        <form class="filter-form" action="https://echo.htmlacademy.ru/">
+          <div class="filter-form__group">
+            <label class="filter-form__title">Стоимость</label>
 
-          <button type="button" class="filter-form__toggle">
-            <span class="visuallyhidden">Открыть список</span>
-            <span class="filter-form__toggle-sign">+</span>
-          </button>
+            <button type="button" class="filter-form__toggle">
+              <span class="visuallyhidden">Открыть список</span>
+              <span class="filter-form__toggle-sign">+</span>
+            </button>
 
-          <div class="filter-form__container">
-            <div class="range">
-              <div class="range__thumb range__thumb--min"></div>
-              <div class="range__thumb range__thumb--max"></div>
+            <div class="filter-form__container">
+              <div class="range">
+                <div class="range__thumb range__thumb--min"></div>
+                <div class="range__thumb range__thumb--max"></div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <fieldset class="filter-form__group">
-          <legend class="filter-form__title">
-            Бренд
-            <button type="button" class="filter-form__toggle">
-              <span class="visuallyhidden">Открыть список</span>
-              <span class="filter-form__toggle-sign">+</span>
-            </button>
-          </legend>
-
-          <ul class="filter-form__items" role="none presentation">
-            <li class="filter-form__item">
-              <label class="filter-form__label" for="teche">Teche</label>
-              <input class="filter-form__checkbox"
-                type="checkbox" value="teche" id="teche" name="watches" checked>
-            </li>
-
-            <li class="filter-form__item">
-              <label class="filter-form__label" for="rado">Rado</label>
-              <input class="filter-form__checkbox"
-                type="checkbox" value="rado" id="rado" name="watches">
-            </li>
-
-            <li class="filter-form__item">
-              <label class="filter-form__label" for="bvlgari">Bvlgari</label>
-              <input class="filter-form__checkbox"
-                type="checkbox" value="bvlgari" id="bvlgari" name="watches">
-            </li>
-
-            <li class="filter-form__item">
-              <label class="filter-form__label" for="tissot">Tissot</label>
-              <input class="filter-form__checkbox"
-                type="checkbox" value="tissot" id="tissot" name="watches">
-            </li>
-
-            <li class="filter-form__item">
-              <label class="filter-form__label" for="omega">Omega</label>
-              <input class="filter-form__checkbox"
-                type="checkbox" value="omega" id="omega" name="watches">
-            </li>
-
-            <li class="filter-form__item">
-              <label class="filter-form__label" for="montblanc">Montblanc</label>
-              <input class="filter-form__checkbox"
-                type="checkbox" value="montblanc" id="montblanc" name="watches">
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="filter-form__group">
-          <legend class="filter-form__title" >
-            Механизм
-            <button type="button" class="filter-form__toggle">
-              <span class="visuallyhidden">Открыть список</span>
-              <span class="filter-form__toggle-sign">+</span>
-            </button>
-          </legend>
-
-          <div class="filter-form__container">
-          </div>
-        </fieldset>
-
-        <fieldset class="filter-form__group">
-          <legend class="filter-form__title">
-            Материал
-            <button type="button" class="filter-form__toggle">
-              <span class="visuallyhidden">Открыть список</span>
-              <span class="filter-form__toggle-sign">+</span>
-            </button>
-          </legend>
-
-          <div class="filter-form__container">
-          </div>
-        </fieldset>
-
-        <fieldset class="filter-form__group">
-          <legend class="filter-form__title">
-            Цвет
-            <button type="button" class="filter-form__toggle">
-              <span class="visuallyhidden">Открыть список</span>
-              <span class="filter-form__toggle-sign">+</span>
-            </button>
-          </legend>
-
-          <div class="filter-form__container">
-          </div>
-        </fieldset>
-
-        <button class="filter-form__reset" type="reset">Сбросить фильтр</button>
-
-        <button class="filter-form__submit" type="submit">Применить фильтр</button>
-      </form>
-
-      <div class="catalog__watches">
-        <h2 class="visuallyhidden">Список моделей часов</h2>
-        <ul class="catalog__items">
-          <li class="catalog__item product">
-            <div class="product__info">
-              <h3 class="product__title">Techne</h3>
-
-              <div class="product__price">12 700</div>
-            </div>
-
-            <div class="product__actions">
-              <button type="button" class="product__action product__action--add-to-favorites">
-                <span class="visuallyhidden">Добавить в избранное</span>
+          <fieldset class="filter-form__group">
+            <legend class="filter-form__title">
+              Бренд
+              <button type="button" class="filter-form__toggle">
+                <span class="visuallyhidden">Открыть список</span>
+                <span class="filter-form__toggle-sign">+</span>
               </button>
+            </legend>
 
-              <button type="button" class="product__action product__action--add-to-cart">
-                <span class="visuallyhidden">Добавить в корзину</span>
+            <ul class="filter-form__items" role="none presentation">
+              <li class="filter-form__item">
+                <label class="filter-form__label" for="teche">Teche</label>
+                <input class="filter-form__checkbox"
+                  type="checkbox" value="teche" id="teche" name="watches" checked>
+              </li>
+
+              <li class="filter-form__item">
+                <label class="filter-form__label" for="rado">Rado</label>
+                <input class="filter-form__checkbox"
+                  type="checkbox" value="rado" id="rado" name="watches">
+              </li>
+
+              <li class="filter-form__item">
+                <label class="filter-form__label" for="bvlgari">Bvlgari</label>
+                <input class="filter-form__checkbox"
+                  type="checkbox" value="bvlgari" id="bvlgari" name="watches">
+              </li>
+
+              <li class="filter-form__item">
+                <label class="filter-form__label" for="tissot">Tissot</label>
+                <input class="filter-form__checkbox"
+                  type="checkbox" value="tissot" id="tissot" name="watches">
+              </li>
+
+              <li class="filter-form__item">
+                <label class="filter-form__label" for="omega">Omega</label>
+                <input class="filter-form__checkbox"
+                  type="checkbox" value="omega" id="omega" name="watches">
+              </li>
+
+              <li class="filter-form__item">
+                <label class="filter-form__label" for="montblanc">Montblanc</label>
+                <input class="filter-form__checkbox"
+                  type="checkbox" value="montblanc" id="montblanc" name="watches">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter-form__group">
+            <legend class="filter-form__title" >
+              Механизм
+              <button type="button" class="filter-form__toggle">
+                <span class="visuallyhidden">Открыть список</span>
+                <span class="filter-form__toggle-sign">+</span>
               </button>
+            </legend>
+
+            <div class="filter-form__container">
             </div>
+          </fieldset>
 
-            <img alt="Омерзительные часы" class="product__image" src="https://via.placeholder.com/127x303.png"/>
-          </li>
+          <fieldset class="filter-form__group">
+            <legend class="filter-form__title">
+              Материал
+              <button type="button" class="filter-form__toggle">
+                <span class="visuallyhidden">Открыть список</span>
+                <span class="filter-form__toggle-sign">+</span>
+              </button>
+            </legend>
 
-          <li class="catalog__item catalog-banner">
-            <div class="catalog-banner__info">
-              <h3 class="catalog-banner__title">-20%</h3>
-
-              <div class="catalog-banner__text">На вторую позицию в чеке</div>
+            <div class="filter-form__container">
             </div>
-          </li>
-        </ul>
-      </div>
+          </fieldset>
 
-      <div class="catalog-pagination">
-        <button type="button" class="catalog-pagination__arrow"> &lt; </button>
-        <a href="/" class="catalog-pagination__link"> 1 </a>
-        <a href="/" class="catalog-pagination__link"> 2 </a>
-        <a href="/" class="catalog-pagination__link"> 3 </a>
-        <a href="/" class="catalog-pagination__link"> ... </a>
-        <a href="/" class="catalog-pagination__link"> 12 </a>
-        <button type="button" class="catalog-pagination__arrow"> > </button>
-      </div>
-    </section>
+          <fieldset class="filter-form__group">
+            <legend class="filter-form__title">
+              Цвет
+              <button type="button" class="filter-form__toggle">
+                <span class="visuallyhidden">Открыть список</span>
+                <span class="filter-form__toggle-sign">+</span>
+              </button>
+            </legend>
 
-    <section class="subscription">
-      <h2 class="subscription__title">
-        Подписка на рассылку
-      </h2>
+            <div class="filter-form__container">
+            </div>
+          </fieldset>
 
-      <div class="subscription__slogan">
-        Получить скидку 10% на первую покупку
-      </div>
+          <button class="filter-form__reset" type="reset">Сбросить фильтр</button>
 
-      <form class="subscription__form">
-        <label class="subscription__label" for="email">
-          Email
-        </label>
+          <button class="filter-form__submit" type="submit">Применить фильтр</button>
+        </form>
 
-        <input class="subscription__text" id="email" name="email" type="email" required>
+        <div class="catalog__watches">
+          <h2 class="visuallyhidden">Список моделей часов</h2>
+          <ul class="catalog__items">
+            <li class="catalog__item product-card">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Techne</h3>
 
-        <button class="subscription__submit" type="submit">Подписаться</button>
-      </form>
-    </section>
-
-    <section class="accessories">
-      <h2 class="accessories__title">Ремешки</h2>
-
-      <a class="accessories__link">Смотреть все</a>
-      <div class="slider slider--accessories-slider">
-        <ul class="slider__items">
-          <li class="slider__item">
-            <div class="product">
-              <div class="product__info">
-                <h3 class="product__title">Techne</h3>
-
-                <div class="product__price">12 700</div>
+                <div class="product-card__price">12 700</div>
               </div>
 
-              <div class="product__actions">
-                <button type="button" class="product__action product__action--add-to-favorites">
+              <div class="product-card__actions">
+                <button type="button" class="product-card__action product-card__action--add-to-favorites">
                   <span class="visuallyhidden">Добавить в избранное</span>
                 </button>
 
-                <button type="button" class="product__action product__action--add-to-cart">
+                <button type="button" class="product-card__action product-card__action--add-to-cart">
                   <span class="visuallyhidden">Добавить в корзину</span>
                 </button>
               </div>
 
-              <img alt="Безвкусные часы" class="product__image" src="https://via.placeholder.com/127x303.png"/>
-            </div>
+              <img alt="Омерзительные часы" class="product-card__image" src="https://via.placeholder.com/127x303.png"/>
+            </li>
+
+            <li class="catalog__item catalog-banner">
+              <div class="catalog-banner__info">
+                <h3 class="catalog-banner__title">-20%</h3>
+
+                <div class="catalog-banner__text">На вторую позицию в чеке</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="catalog-pagination">
+          <button type="button" class="catalog-pagination__arrow"> &lt; </button>
+          <a href="/" class="catalog-pagination__link"> 1 </a>
+          <a href="/" class="catalog-pagination__link"> 2 </a>
+          <a href="/" class="catalog-pagination__link"> 3 </a>
+          <a href="/" class="catalog-pagination__link"> ... </a>
+          <a href="/" class="catalog-pagination__link"> 12 </a>
+          <button type="button" class="catalog-pagination__arrow"> > </button>
+        </div>
+      </section>
+
+      <section class="subscription">
+        <h2 class="subscription__title">
+          Подписка на рассылку
+        </h2>
+
+        <div class="subscription__slogan">
+          Получить скидку 10% на первую покупку
+        </div>
+
+        <form class="subscription__form">
+          <label class="subscription__label" for="email">
+            Email
+          </label>
+
+          <input class="subscription__text" id="email" name="email" type="email" required>
+
+          <button class="subscription__submit" type="submit">Подписаться</button>
+        </form>
+      </section>
+
+      <section class="page-section accessories">
+        <h2 class="accessories__title page-section__title ">Ремешки</h2>
+
+        <a class="accessories__link">Смотреть все</a>
+        <div class="slider accessories__slider">
+          <ul class="slider__items">
+            <li class="slider__item">
+              <div class="product-card">
+                <div class="product-card__info">
+                  <h3 class="product-card__title">Techne</h3>
+
+                  <div class="product-card__price">12 700</div>
+                </div>
+
+                <div class="product-card__actions">
+                  <button type="button" class="product-card__action product-card__action--add-to-favorites">
+                    <span class="visuallyhidden">Добавить в избранное</span>
+                  </button>
+
+                  <button type="button" class="product-card__action product-card__action--add-to-cart">
+                    <span class="visuallyhidden">Добавить в корзину</span>
+                  </button>
+                </div>
+
+                <img alt="Безвкусные часы" class="product-card__image" src="https://via.placeholder.com/127x303.png"/>
+              </div>
+            </li>
+          </ul>
+
+          <div class="slider-controls">
+            <button type="button" class="slider-controls__arrow"> &lt; </button>
+            <button type="button" class="slider-controls__arrow"> > </button>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <h2 class="visuallyhidden">Контакты и важные ссылки</h2>
+
+      <section class="page-footer__section">
+        <h3 class="page-footer__section-title visuallyhidden">Контакты компании</h3>
+
+        <a class="logo logo--footer" href="/">На главную страницу</a>
+
+        <ul class="page-footer__items">
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="tel:8(499)450-47-97">8 (499) 450-47-97</a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
           </li>
         </ul>
+      </section>
 
-        <div class="slider-controls">
-          <button type="button" class="slider-controls__arrow"> &lt; </button>
-          <button type="button" class="slider-controls__arrow"> > </button>
-        </div>
-      </div>
+      <section class="page-footer__section">
+        <h3 class="page-footer__section-title">О компании</h3>
 
-    </section>
+        <ul class="page-footer__items">
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="/">Наши магазины</a>
+          </li>
 
-    <footer class="footer">
-      <h2>Контакты и важные ссылки</h2>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="/">Вакансии</a>
+          </li>
 
-      <div class="footer__block">
-        <h3 class="footer__block-title visuallyhidden">Контакты компании</h3>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="/">Сертификаты</a>
+          </li>
 
-        <div class="logo logo--footer"></div>
-
-        <ul class="footer__list">
-          <li class="footer__item">8 (499) 450-47-97</li>
-          <li class="footer__item">info@conquest.watch.ru</li>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="/">Отзывы</a>
+          </li>
         </ul>
-      </div>
+      </section>
 
-      <div class="footer__block">
-        <h3 class="footer__block-title">О компании</h3>
+      <section class="page-footer__section">
+        <h3 class="page-footer__section-title">Покупателям</h3>
 
-        <ul class="footer__list">
-          <li class="footer__item">Наши магазины</li>
-          <li class="footer__item">Вакансии</li>
-          <li class="footer__item">Сертификаты</li>
-          <li class="footer__item">Отзывы</li>
+        <ul class="page-footer__items">
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="/">Каталог товаров</a>
+          </li>
+
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="/">Как заказать?</a>
+          </li>
+
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="/">FAQ</a>
+          </li>
+
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="/">Корпоративным клиентам</a>
+          </li>
         </ul>
-      </div>
+      </section>
 
-      <div class="footer__block">
-        <h3 class="footer__block-title">Покупателям</h3>
+      <section class="page-footer__section">
+        <h3 class="page-footer__section-title">Оплата и доставка</h3>
 
-        <ul class="footer__list">
-          <li class="footer__item">Каталог товаров</li>
-          <li class="footer__item">Как заказать?</li>
-          <li class="footer__item">FAQ</li>
-          <li class="footer__item">Корпоративным клиентам</li>
+        <ul class="page-footer__items">
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="/">Способы оплаты</a>
+          </li>
+
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="/">Время доставки</a>
+          </li>
+
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="/">Гарантии и ремонт</a>
+          </li>
+
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="/">Возврат и компенсация</a>
+          </li>
         </ul>
-      </div>
-
-      <div class="footer__block">
-        <h3 class="footer__block-title">Оплата и доставка</h3>
-
-        <ul class="footer__list">
-          <li class="footer__item">Способы оплаты</li>
-          <li class="footer__item">Время доставки</li>
-          <li class="footer__item">Гарантии и ремонт</li>
-          <li class="footer__item">Возврат и компенсация</li>
-        </ul>
-      </div>
-
+      </section>
     </footer>
   </body>
 </html>
