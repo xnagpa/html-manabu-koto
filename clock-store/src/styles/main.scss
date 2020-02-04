@@ -1,5 +1,6 @@
-$body-color: red;
+@import './common.scss';
+
 
 body {
-  color: $body-color;
+  color: red;
 }
