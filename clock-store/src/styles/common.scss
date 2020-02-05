@@ -40,6 +40,8 @@ $pinkish-grey: #D4B098;
 $pinkish-grey-two: #BDB9B5;
 $pinkish-grey-48: rgba(212, 176, 152, .48);
 
+$roboto-font-family: Roboto, Georgia, Times New Roman, Times, serif;
+
 @font-face {
   font-family: RobotoRegular;
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
@@ -53,6 +55,10 @@ $pinkish-grey-48: rgba(212, 176, 152, .48);
 @font-face {
   font-family: Prata;
   src: url("../fonts/Prata/Prata-Regular.ttf");
+}
+
+BODY {
+  font: 12px/1.2 $roboto-font-family;
 }
 
 BODY > * {
