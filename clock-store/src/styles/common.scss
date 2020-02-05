@@ -1,34 +1,70 @@
-$white: #FFFFFF;
-$darkGray: #1B1A17;
-$lightGray: #5C5C50;
-$mediumGray: #444240;
-$anotherGray: #6F6E6D;
-$olive: #8B8371;
-$olive-light: #E7E0CF;
-$olive-background: #FDFDFB;
+$beige: #E6C8B4;
 
-$autumn: #D4B098;
-$price: #636261;
-$button: #31302C;
+$black: #1B1A17;
+$black-two: #31302C;
+$black-three: #1D1A1A;
+$black-four: #000;
+$black-five: #262421;
+$black-23: rgba(0, 0, 0, .23);
 
-$link-active: #A69876;
-$link-normal: #555248;
+$brown-grey: #818181;
+$brown-grey-two: #B3B3B3;
+$brown-grey-three: #8B8371;
 
-$bread-crumb-inactive: #BDB9B5;
+$brownish-grey: #636261;
+$brownish-grey-two: #6F6E6D;
+$brownish-grey-three: #686868;
+$brownish-grey-15: rgba(100, 100, 100, .15);
 
+$dust: #A69876;
+
+$egg-shell: #EAE3D4;
+$egg-shell-0: rgba(234, 227, 212, 0);
+$egg-shell-38: rgba(234, 228, 213, .38);
+
+$greyish-brown: #444240;
+$greyish-brown-two: #555248;
+$greyish-brown-three: #5C5C50;
+
+$light-peach: #B6B6B6;
+$light-peach-0: rgba(231, 224, 207, 0);
+$light-peach-two: #E7E0CF;
+
+$off-white: #FDFDFB;
+$off-white-two: #F7F5EF;
+$white: #FFF;
+
+$pale-red: #D75A4A;
+
+$pinkish-grey: #D4B098;
+$pinkish-grey-two: #BDB9B5;
+$pinkish-grey-48: rgba(212, 176, 152, .48);
 
 @font-face {
-  font-family: "RobotoRegular";
+  font-family: RobotoRegular;
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
-  font-family: "PlayfairDisplay";
+  font-family: PlayfairDisplay;
   src: url("../fonts/PlayfairDisplay/PlayfairDisplay-VariableFont:wght.ttf");
 }
 
 @font-face {
-  font-family: "Prata";
+  font-family: Prata;
   src: url("../fonts/Prata/Prata-Regular.ttf");
 }
 
+BODY > * {
+  outline: 2px solid deeppink;
+}
+
+BODY > * > * {
+  outline: 2px dashed lime;
+  outline-offset: -2px;
+}
+
+BODY > * > * > * {
+  outline: 2px dotted dodgerblue;
+  outline-offset: -4px;
+}
