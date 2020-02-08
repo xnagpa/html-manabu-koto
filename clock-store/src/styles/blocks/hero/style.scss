@@ -9,7 +9,7 @@
 .hero-product {
   &__title {
     font: 45px $playfair-font-family;
-  };
+  }
 
   &__subtitle {
     font: 30px $playfair-font-family;
@@ -19,7 +19,7 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 1.52;
-  };
+  }
 
   &__link {
     display: block;
@@ -29,14 +29,17 @@
     text-decoration: none;
     text-transform: uppercase;
     background: $gray-darkest;
+
     &:focus {
       background: $dark-gray-lighter;
     }
+
     &:active {
       background: $dark-gray-lighter;
     }
+
     &:hover {
       background: $dark-gray-lighter;
     }
-  };
+  }
 }

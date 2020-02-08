@@ -19,7 +19,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "lint": "npx stylelint '**/*.scss'",
+    "lint": "npx stylelint '**/*.scss' --fix",
     "start": "webpack-dev-server --open"
   },
   "dependencies": {

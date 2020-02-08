@@ -1,10 +1,12 @@
 .popular {
   min-height: 768px;
+
   &__link {
     font-weight: 500;
     font-size: 16px;
+
     &::after {
-      content: '';
+      content: "";
       height: 1px;
       background-color: $gray-darker;
       margin-top: 20px;
@@ -15,26 +17,29 @@
     &__title {
       font: bold 18px $playfair-font-family;
       text-transform: uppercase;
-    };
+    }
 
     &__price {
       font: 16px $prata-font-family;
-    };
+    }
 
     &__link {
       padding: 28px 38px;
       font: 16px $playfair-font-family;
       text-decoration: none;
       color: $dust-darkest;
+
       &:focus {
         color: $dust-darker;
       }
+
       &:active {
         color: $dust-darker;
       }
+
       &:hover {
         color: $dust-darker;
       }
-    };
+    }
   }
 }
