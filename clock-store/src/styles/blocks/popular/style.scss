@@ -8,8 +8,8 @@
     &::after {
       content: "";
       height: 1px;
-      background-color: $gray-darker;
       margin-top: 20px;
+      background-color: $gray-darker;
     }
   }
 
@@ -34,11 +34,11 @@
       }
 
       &:active {
-        color: $dust-darker;
+        color: $dust-medium;
       }
 
       &:hover {
-        color: $dust-darker;
+        color: $sand-medium;
       }
     }
   }

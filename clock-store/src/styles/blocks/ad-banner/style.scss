@@ -5,22 +5,22 @@
   }
 
   &__link {
+    padding: 28px 38px;
+    background: $beige-medium;
     font-size: 12px;
     text-decoration: none;
     color: $white;
-    padding: 28px 38px;
-    background: $beige-medium;
 
     &:focus {
-      background: $beige-medium;
+      color: $beige-medium;
     }
 
     &:active {
-      background: $beige-medium;
+      color: $beige-lighter;
     }
 
     &:hover {
-      background: $beige-medium;
+      color: $beige-lightest;
     }
   }
 }

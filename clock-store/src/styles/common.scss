@@ -68,3 +68,20 @@ BODY > * > * > * {
   outline: 2px dotted dodgerblue;
   outline-offset: -4px;
 }
+
+A {
+  color: $black;
+  text-decoration: none;
+
+  &:focus {
+    color: $beige-medium;
+  }
+
+  &:active {
+    color: $beige-lighter;
+  }
+
+  &:hover {
+    color: $beige-lightest;
+  }
+}
