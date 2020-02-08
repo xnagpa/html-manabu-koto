@@ -22,10 +22,9 @@
     };
 
     &__link {
+      padding: 28px 38px;
       font: 16px $playfair-font-family;
-      color: $white;
       text-decoration: none;
-      text-transform: uppercase;
       color: $dust-darkest;
       &:focus {
         color: $dust-darker;

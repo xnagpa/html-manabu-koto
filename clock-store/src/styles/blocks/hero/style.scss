@@ -24,19 +24,20 @@
 
 .hero-product{
   &__link {
-    font: 16px $playfair-font-family;
+    padding: 28px 38px;
+    font-size: 16px;
     color: $white;
     text-decoration: none;
     text-transform: uppercase;
-    color: $gray-darkest;
+    background: $gray-darkest;
     &:focus {
-      color: $dark-gray-lighter;
+      background: $dark-gray-lighter;
     }
     &:active {
-      color: $dark-gray-lighter;
+      background: $dark-gray-lighter;
     }
     &:hover {
-      color: $dark-gray-lighter;
+      background: $dark-gray-lighter;
     }
   };
 }
