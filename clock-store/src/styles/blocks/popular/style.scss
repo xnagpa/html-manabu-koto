@@ -23,16 +23,18 @@
 
     &__link {
       font: 16px $playfair-font-family;
+      color: $white;
       text-decoration: none;
+      text-transform: uppercase;
       color: $dust-darkest;
       &:focus {
-        color: $sand-medium;
+        color: $dust-darker;
       }
       &:active {
-        color: $sand-medium;
+        color: $dust-darker;
       }
       &:hover {
-        color: $sand-medium;
+        color: $dust-darker;
       }
     };
   }

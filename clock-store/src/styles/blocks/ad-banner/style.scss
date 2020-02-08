@@ -6,8 +6,19 @@
 
   &__link {
     font-size: 12px;
+    text-decoration: none;
     color: $white;
     padding: 28px 38px;
     background: $beige-medium;
+
+    &:focus {
+      background: $beige-medium;
+    }
+    &:active {
+      background: $beige-medium;
+    }
+    &:hover {
+      background: $beige-medium;
+    }
   }
 }

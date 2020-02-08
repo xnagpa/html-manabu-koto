@@ -21,3 +21,22 @@
 .hero-view {
   font: 16px $prata-font-family;
 }
+
+.hero-product{
+  &__link {
+    font: 16px $playfair-font-family;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $gray-darkest;
+    &:focus {
+      color: $dark-gray-lighter;
+    }
+    &:active {
+      color: $dark-gray-lighter;
+    }
+    &:hover {
+      color: $dark-gray-lighter;
+    }
+  };
+}
