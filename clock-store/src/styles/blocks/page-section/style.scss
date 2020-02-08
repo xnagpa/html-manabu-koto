@@ -1,3 +1,6 @@
 .page-section {
-  background: pink;
+  &__title {
+    font:  34px $prata-font-family;
+    color: $dark-gray-darker;
+  }
 }

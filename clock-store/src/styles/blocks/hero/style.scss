@@ -1,3 +1,23 @@
 .hero {
   min-height: 805px;
+  &__title {
+    font:  45px $playfair-font-family;
+  };
+
+  &__subtitle {
+    font: 30px $playfair-font-family;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.52;
+  }
+
+  &__link {
+    font-size: 12px;
+  }
+}
+
+.hero-view {
+  font: 16px $prata-font-family;
 }

@@ -1,3 +1,18 @@
 .main-nav {
   min-height: 103px;
+  &__item {
+    list-style: none;
+    display: inline;
+  };
+  &__link {
+    font: 14px;
+    text-decoration: none;
+    color: $dark-gray-darker;
+    &:focus {
+      color: $dark-gray-darker;
+    }
+    &:active {
+      color: $dark-gray-darker;
+    }
+  };
 }

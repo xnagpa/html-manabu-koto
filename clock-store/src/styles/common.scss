@@ -26,8 +26,6 @@ $beige-lightest: rgba(212, 176, 152, .48);
 
 $white: #FFF;
 
-$roboto-font-family: Roboto, Arial, sans-serif;
-
 @font-face {
   font-family: RobotoRegular;
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
@@ -41,6 +39,16 @@ $roboto-font-family: Roboto, Arial, sans-serif;
 @font-face {
   font-family: Prata;
   src: url("../fonts/Prata/Prata-Regular.ttf");
+}
+
+$roboto-font-family: RobotoRegular, Arial, sans-serif;
+
+$playfair-font-family: PlayfairDisplay, 'Times New Roman', serif;
+
+$prata-font-family: Prata, 'Times New Roman', serif;
+
+.visuallyhidden {
+  display: none;
 }
 
 BODY {
