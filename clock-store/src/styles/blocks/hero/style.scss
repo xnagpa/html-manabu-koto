@@ -1,7 +1,14 @@
 .hero {
   min-height: 805px;
+}
+
+.hero-view {
+  font: 16px $prata-font-family;
+}
+
+.hero-product {
   &__title {
-    font:  45px $playfair-font-family;
+    font: 45px $playfair-font-family;
   };
 
   &__subtitle {
@@ -10,20 +17,12 @@
 
   &__text {
     font-size: 14px;
+    font-weight: 300;
     line-height: 1.52;
-  }
+  };
 
   &__link {
-    font-size: 12px;
-  }
-}
-
-.hero-view {
-  font: 16px $prata-font-family;
-}
-
-.hero-product{
-  &__link {
+    display: block;
     padding: 28px 38px;
     font-size: 16px;
     color: $white;

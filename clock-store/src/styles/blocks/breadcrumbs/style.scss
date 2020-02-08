@@ -1,3 +1,10 @@
 .breadcumbs {
   min-height: 13px;
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    font-size: 14px;
+    color: $gray-light;
+  }
 }
