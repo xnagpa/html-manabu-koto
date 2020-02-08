@@ -5,14 +5,17 @@
     display: inline;
   };
   &__link {
-    font: 14px;
+    font-size: 14px;
     text-decoration: none;
-    color: $dark-gray-darker;
+    color: $dust-darkest;
     &:focus {
-      color: $dark-gray-darker;
+      color: $sand-medium;
     }
     &:active {
-      color: $dark-gray-darker;
+      color: $sand-medium;
+    }
+    &:hover {
+      color: $sand-medium;
     }
   };
 }
