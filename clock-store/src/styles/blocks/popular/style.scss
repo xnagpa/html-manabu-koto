@@ -1,15 +1,28 @@
+@import "../../mixins/big-button-link.scss";
+@import "../../mixins/common-link.scss";
+
 .popular {
   min-height: 768px;
 
   &__link {
+    position: relative;
     font-weight: 500;
-    font-size: 16px;
+    color: $gray-darkest;
+
+    @include common-link(
+      $color: $gray-darkest,
+      $focus-color: $dark-gray-lighter,
+      $active-color: $dark-gray-light,
+      $hover-color: $dark-gray-medium
+    );
 
     &::after {
       content: "";
-      height: 1px;
-      margin-top: 20px;
-      background-color: $gray-darker;
+      border-bottom: 2px solid $dust-medium;
+      width: 100%;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
     }
   }
 
@@ -27,23 +40,12 @@
     }
 
     &__link {
-      padding: 28px 38px;
-      font-size: 16px;
-      font-family: $playfair-font-family;
-      text-decoration: none;
-      color: $dust-darkest;
-
-      &:focus {
-        color: $dust-darker;
-      }
-
-      &:active {
-        color: $dust-medium;
-      }
-
-      &:hover {
-        color: $sand-medium;
-      }
+      @include common-link(
+        $font-family: $playfair-font-family,
+        $color: $dust-darkest,
+        $focus-color: $dust-darker,
+        $active-color: $dust-medium,
+        $hover-color: $sand-medium);
     }
   }
 }

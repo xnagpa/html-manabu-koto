@@ -1,3 +1,5 @@
+@import "../../mixins/common-link.scss";
+
 .main-nav {
   min-height: 103px;
 
@@ -7,20 +9,11 @@
   }
 
   &__link {
-    font-size: 14px;
-    text-decoration: none;
-    color: $dust-darkest;
-
-    &:focus {
-      color: $sand-medium;
-    }
-
-    &:active {
-      color: $sand-medium;
-    }
-
-    &:hover {
-      color: $sand-medium;
-    }
+    @include common-link(
+      $font-size: 14px,
+      $color: $dust-darkest,
+      $focus-color: $sand-medium,
+      $active-color: $sand-medium,
+      $hover-color: $sand-medium);
   }
 }

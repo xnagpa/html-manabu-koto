@@ -31,5 +31,5 @@
     "media-feature-parentheses-space-inside": "never",
     "media-feature-colon-space-before": "never",
     "media-feature-colon-space-after": "always"
-  }
+  },
 }

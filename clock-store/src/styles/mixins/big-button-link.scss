@@ -1,0 +1,26 @@
+@mixin big-button-link(
+  $background,
+  $color,
+  $color-focus,
+  $color-active,
+  $color-hover,
+  $font-size: 16px) {
+  display: block;
+  padding: 28px 38px;
+  background: $background;
+  font-size: $font-size;
+  text-decoration: none;
+  color: $color;
+
+  &:focus {
+    color: $color-focus;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+
+  &:hover {
+    color: $color-hover;
+  }
+}

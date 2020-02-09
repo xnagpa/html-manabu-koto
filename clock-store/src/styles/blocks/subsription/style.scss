@@ -1,3 +1,15 @@
+@import "../../mixins/big-button-link.scss";
+
 .subscription {
   min-height: 293px;
+
+  &__submit {
+    @include big-button-link(
+      $background: $dark-gray-light,
+      $color: $white,
+      $color-focus: $beige-medium,
+      $color-active: $beige-lighter,
+      $color-hover: $beige-lightest
+    );
+  }
 }

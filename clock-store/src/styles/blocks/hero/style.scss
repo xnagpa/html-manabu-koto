@@ -1,3 +1,5 @@
+@import "../../mixins/big-button-link.scss";
+
 .hero {
   min-height: 805px;
 }
@@ -25,24 +27,12 @@
   }
 
   &__link {
-    display: block;
-    padding: 28px 38px;
-    font-size: 16px;
-    background: $gray-darkest;
-    color: $white;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &:focus {
-      color: $beige-medium;
-    }
-
-    &:active {
-      color: $beige-lighter;
-    }
-
-    &:hover {
-      color: $beige-lightest;
-    }
+    @include big-button-link(
+      $background: $gray-darkest,
+      $color: $white,
+      $color-focus: $beige-medium,
+      $color-active: $beige-lighter,
+      $color-hover: $beige-lightest
+    );
   }
 }

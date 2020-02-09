@@ -1,3 +1,6 @@
+
+@import "../../mixins/big-button-link.scss";
+
 .ad-banner {
   &__title {
     font-size: 16px;
@@ -5,22 +8,12 @@
   }
 
   &__link {
-    padding: 28px 38px;
-    background: $beige-medium;
-    font-size: 12px;
-    text-decoration: none;
-    color: $white;
-
-    &:focus {
-      color: $beige-medium;
-    }
-
-    &:active {
-      color: $beige-lighter;
-    }
-
-    &:hover {
-      color: $beige-lightest;
-    }
+    @include big-button-link(
+      $background: $beige-medium,
+      $color: $white,
+      $color-focus: $beige-medium,
+      $color-active: $beige-lighter,
+      $color-hover: $beige-lightest,
+      $font-size: 12px);
   }
 }
