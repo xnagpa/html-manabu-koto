@@ -1,19 +1,9 @@
 
-@import "../../mixins/big-button.scss";
-
 .ad-banner {
+  min-height: 200px;
+
   &__title {
     font-size: 16px;
     line-height: 1.5;
-  }
-
-  &__link {
-    @include big-button(
-      $background: $beige-medium,
-      $color: $white,
-      $color-focus: $beige-medium,
-      $color-active: $beige-lighter,
-      $color-hover: $beige-lightest,
-      $font-size: 12px);
   }
 }

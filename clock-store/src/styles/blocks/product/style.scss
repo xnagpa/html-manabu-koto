@@ -1,15 +1,3 @@
-@import "../../mixins/big-button.scss";
-
 .product {
   min-height: 692px;
-
-  &__button {
-    @include big-button(
-      $background: $dark-gray-light,
-      $color: $white,
-      $color-focus: $beige-medium,
-      $color-active: $beige-lighter,
-      $color-hover: $beige-lightest
-    );
-  }
 }

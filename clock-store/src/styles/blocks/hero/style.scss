@@ -1,5 +1,3 @@
-@import "../../mixins/big-button.scss";
-
 .hero {
   min-height: 805px;
 }
@@ -23,15 +21,5 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 1.52;
-  }
-
-  &__link {
-    @include big-button(
-      $background: $gray-darkest,
-      $color: $white,
-      $color-focus: $beige-medium,
-      $color-active: $beige-lighter,
-      $color-hover: $beige-lightest
-    );
   }
 }

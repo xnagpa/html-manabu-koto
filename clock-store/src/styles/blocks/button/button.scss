@@ -1,0 +1,30 @@
+.button {
+  display: inline;
+  padding: 28px 38px;
+  background: $dark-gray-light;
+  font-size: 12px;
+  font-family: $roboto-font-family;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+
+  &:focus {
+    color: $beige-medium;
+  }
+
+  &:active {
+    color: $beige-lighter;
+  }
+
+  &:hover {
+    color: $beige-lightest;
+  }
+}
+
+.button .button--gray-darkest {
+  background: $gray-darkest;
+}
+
+.button .button--beige-medium {
+  background: $beige-medium;
+}
