@@ -1,5 +1,5 @@
 
-@import "../../mixins/big-button-link.scss";
+@import "../../mixins/big-button.scss";
 
 .ad-banner {
   &__title {
@@ -8,7 +8,7 @@
   }
 
   &__link {
-    @include big-button-link(
+    @include big-button(
       $background: $beige-medium,
       $color: $white,
       $color-focus: $beige-medium,

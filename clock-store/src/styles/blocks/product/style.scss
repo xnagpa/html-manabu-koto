@@ -1,10 +1,10 @@
-@import "../../mixins/big-button-link.scss";
+@import "../../mixins/big-button.scss";
 
 .product {
   min-height: 692px;
 
   &__button {
-    @include big-button-link(
+    @include big-button(
       $background: $dark-gray-light,
       $color: $white,
       $color-focus: $beige-medium,

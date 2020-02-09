@@ -1,4 +1,4 @@
-@import "../../mixins/big-button-link.scss";
+@import "../../mixins/big-button.scss";
 @import "../../mixins/common-link.scss";
 
 .popular {
@@ -7,7 +7,8 @@
   &__link {
     position: relative;
     font-weight: 500;
-    color: $gray-darkest;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $dust-medium;
 
     @include common-link(
       $color: $gray-darkest,
@@ -15,15 +16,6 @@
       $active-color: $dark-gray-light,
       $hover-color: $dark-gray-medium
     );
-
-    &::after {
-      content: "";
-      border-bottom: 2px solid $dust-medium;
-      width: 100%;
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-    }
   }
 
   .popular-item {

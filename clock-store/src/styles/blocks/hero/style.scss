@@ -1,4 +1,4 @@
-@import "../../mixins/big-button-link.scss";
+@import "../../mixins/big-button.scss";
 
 .hero {
   min-height: 805px;
@@ -26,7 +26,7 @@
   }
 
   &__link {
-    @include big-button-link(
+    @include big-button(
       $background: $gray-darkest,
       $color: $white,
       $color-focus: $beige-medium,
