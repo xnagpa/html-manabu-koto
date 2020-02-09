@@ -1,6 +1,7 @@
 .page-section {
   &__title {
-    font: 34px/1.3 $prata-font-family;
+    font-size: 34px;
+    font-family: $prata-font-family;
     color: $dark-gray-darker;
   }
 }
