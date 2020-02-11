@@ -19,12 +19,12 @@
   &:hover {
     color: $beige-lightest;
   }
-}
 
-.button.button--gray-darkest {
-  background: $gray-darkest;
-}
+  &--gray-darkest {
+    background: $gray-darkest;
+  }
 
-.button.button--beige-medium {
-  background: $beige-medium;
+  &--beige-medium {
+    background: $beige-medium;
+  }
 }
