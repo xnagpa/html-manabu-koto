@@ -9,13 +9,16 @@
 
     &:focus {
       color: $red-darker;
+      border-bottom: 2px solid $red-darker;
     }
 
     &:active {
       color: $beige-lighter;
+      border-bottom: 2px solid $beige-lighter;
     }
 
     &:hover {
+      border-bottom: 2px solid $beige-lightest;
       color: $beige-lightest;
     }
   }
