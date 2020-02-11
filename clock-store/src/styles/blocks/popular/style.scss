@@ -6,6 +6,18 @@
     font-weight: 500;
     padding-bottom: 10px;
     border-bottom: 2px solid $dust-medium;
+
+    &:focus {
+      color: $red-darker;
+    }
+
+    &:active {
+      color: $beige-lighter;
+    }
+
+    &:hover {
+      color: $beige-lightest;
+    }
   }
 
   .popular-item {
