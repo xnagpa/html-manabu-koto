@@ -1,7 +1,7 @@
 .button {
   display: inline;
   padding: 28px 38px;
-  background: $dark-gray-light;
+  background-color: $dark-gray-light;
   font-size: 12px;
   font-family: $roboto-font-family;
   text-decoration: none;
@@ -10,25 +10,54 @@
 
   &:focus {
     color: $beige-medium;
+    background-color: $gray-darkest;
   }
 
   &:active {
     color: $beige-lighter;
+    background-color: $gray-medium;
   }
 
   &:hover {
-    color: $beige-lightest;
+    color: $dark-gray-lighter;
+    background-color: $gray-darker;
   }
 
   &--gray-darkest {
-    background: $gray-darkest;
+    background-color: $gray-darkest;
+
+    &:focus {
+      color: $beige-medium;
+      background-color: $gray-darker;
+    }
+
+    &:active {
+      color: $beige-lighter;
+      background-color: $gray-medium;
+    }
+
+    &:hover {
+      color: $beige-lightest;
+      background-color: $dark-gray-darker;
+    }
   }
 
   &--beige-medium {
-    background: $beige-medium;
+    background-color: $beige-medium;
+
+    &:focus {
+      color: $beige-medium;
+      background-color: $red-darker;
+    }
+
+    &:active {
+      color: $beige-lighter;
+      background-color: $red-darker;
+    }
 
     &:hover {
       color: $dust-darkest;
+      background-color: $red-darker;
     }
   }
 }
