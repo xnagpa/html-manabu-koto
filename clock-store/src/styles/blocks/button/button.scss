@@ -26,5 +26,9 @@
 
   &--beige-medium {
     background: $beige-medium;
+
+    &:hover {
+      color: $dust-darkest;
+    }
   }
 }
