@@ -1,28 +1,6 @@
 .popular {
   min-height: 768px;
 
-  &__link {
-    position: relative;
-    font-weight: 500;
-    padding-bottom: 10px;
-    border-bottom: 2px solid $dust-medium;
-
-    &:focus {
-      color: $red-darker;
-      border-bottom: 2px solid $red-darker;
-    }
-
-    &:active {
-      color: $beige-lighter;
-      border-bottom: 2px solid $beige-lighter;
-    }
-
-    &:hover {
-      border-bottom: 2px solid $beige-lightest;
-      color: $beige-lightest;
-    }
-  }
-
   .popular-item {
     &__title {
       font-size: 18px;
@@ -39,6 +17,18 @@
     &__link {
       font-family: $playfair-font-family;
       color: $dust-darkest;
+
+      &:active {
+        color: $gray-medium;
+      }
+
+      &:focus {
+        color: $gray-darker;
+      }
+
+      &:hover {
+        color: $gray-lighter;
+      }
     }
   }
 }

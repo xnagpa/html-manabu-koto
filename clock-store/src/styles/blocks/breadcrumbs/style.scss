@@ -8,5 +8,21 @@
   &__link {
     font-size: 14px;
     color: $gray-light;
+
+    &:active {
+      color: $gray-medium;
+    }
+
+    &:focus {
+      color: $gray-darker;
+    }
+
+    &:hover {
+      color: $gray-darkest;
+    }
+
+    &--current {
+      color: $dust-darkest;
+    }
   }
 }

@@ -1,3 +1,25 @@
 .catalog {
   min-height: 1576px;
 }
+
+.catalog-pagination {
+  &__link {
+    color: $gray-light;
+
+    &:active {
+      color: $gray-medium;
+    }
+
+    &:focus {
+      color: $gray-darker;
+    }
+
+    &:hover {
+      color: $gray-darkest;
+    }
+
+    &--current {
+      color: $dark-gray-darker;
+    }
+  }
+}

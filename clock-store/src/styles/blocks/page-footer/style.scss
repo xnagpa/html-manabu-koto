@@ -1,3 +1,19 @@
 .page-footer {
   min-height: 275px;
+
+  &__link {
+    color: $white;
+
+    &:active {
+      color: $gray-medium;
+    }
+
+    &:focus {
+      color: $gray-darker;
+    }
+
+    &:hover {
+      color: $gray-darkest;
+    }
+  }
 }

@@ -1,0 +1,21 @@
+.underlined-link {
+  position: relative;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 2px solid $dust-medium;
+
+  &:focus {
+    color: $red-darker;
+    border-bottom: 2px solid $red-darker;
+  }
+
+  &:active {
+    color: $beige-lighter;
+    border-bottom: 2px solid $beige-lighter;
+  }
+
+  &:hover {
+    border-bottom: 2px solid $beige-lightest;
+    color: $beige-lightest;
+  }
+}
