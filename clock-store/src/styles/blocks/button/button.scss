@@ -71,17 +71,17 @@
 
     &:focus {
       color: $beige-medium;
-      border: 2px solid currentColor;
+      background-color: $sand-lighter;
     }
 
     &:active {
       color: $beige-lighter;
-      border: 2px solid currentColor;
+      background-color: $sand-lighter;
     }
 
     &:hover {
-      color: $white-medium;
-      border: 2px solid currentColor;
+      color: $dust-darkest;
+      background-color: $sand-lighter;
     }
   }
 }
