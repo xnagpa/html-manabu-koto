@@ -6,6 +6,8 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: [
+    './src/views/product.html',
+    './src/views/catalog.html',
     './src/views/index.html',
     './src/styles/main.scss'
   ],
@@ -16,6 +18,14 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/views/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'catalog.html',
+      template: './src/views/catalog.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'product.html',
+      template: './src/views/product.html'
     }),
     new ExtractTextPlugin({filename: 'style.css'}),
   ],
