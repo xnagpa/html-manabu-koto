@@ -1,0 +1,13 @@
+.filter-form {
+  min-height: 523px;
+  font-family: $roboto-font-family;
+  color: $dark-gray-medium;
+
+  &__reset {
+    padding: 20px 50px;
+    border: 2px solid $sand-lighter;
+    background-color: transparent;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
