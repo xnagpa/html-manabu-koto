@@ -2,19 +2,20 @@
   padding-bottom: 10px;
   border-bottom: 2px solid $dust-medium;
   font-weight: 500;
+  color: $gray-darkest;
 
   &:focus {
-    border-color: $red-darker;
+    border-color: currentColor;
     color: $red-darker;
   }
 
   &:active {
-    border-color: $beige-lighter;
+    border-color: currentColor;
     color: $beige-lighter;
   }
 
   &:hover {
-    border-color: $beige-lightest;
+    border-color: currentColor;
     color: $beige-lightest;
   }
 }
