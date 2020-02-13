@@ -24,7 +24,8 @@ $beige-medium: #D4B098;
 $beige-lighter: #E6C8B4;
 $beige-lightest: rgba(212, 176, 152, .48);
 
-$white: #FFF;
+$white-medium: #FFF;
+$white-lighter: rgba(255, 255, 255, .75);
 
 @font-face {
   font-family: RobotoRegular;
@@ -51,27 +52,28 @@ $prata-font-family: Prata, "Times New Roman", serif;
   display: none;
 }
 
-BODY {
-  font: 12px/1.2 $roboto-font-family;
-}
+// BODY {
+//   font: 12px/1.2 $roboto-font-family;
+// }
 
-BODY > * {
-  outline: 2px solid deeppink;
-}
+// BODY > * {
+//   outline: 2px solid deeppink;
+// }
 
-BODY > * > * {
-  outline: 2px dashed lime;
-  outline-offset: -2px;
-}
+// BODY > * > * {
+//   outline: 2px dashed lime;
+//   outline-offset: -2px;
+// }
 
-BODY > * > * > * {
-  outline: 2px dotted dodgerblue;
-  outline-offset: -4px;
-}
+// BODY > * > * > * {
+//   outline: 2px dotted dodgerblue;
+//   outline-offset: -4px;
+// }
 
 A {
   color: $dust-darkest;
   text-decoration: none;
+  font-family: $roboto-font-family;
 
   &:focus {
     color: $red-darker;
