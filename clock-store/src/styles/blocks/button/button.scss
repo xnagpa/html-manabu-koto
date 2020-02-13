@@ -71,12 +71,12 @@
 
     &:focus {
       color: $beige-medium;
-      background-color: $sand-lighter;
+      background-color: $sand-medium;
     }
 
     &:active {
       color: $beige-lighter;
-      background-color: $sand-lighter;
+      background-color: $dust-darker;
     }
 
     &:hover {
