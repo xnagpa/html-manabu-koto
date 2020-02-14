@@ -62,12 +62,11 @@
     }
   }
 
-  &--bordered-button {
+  &--bordered {
     padding: 20px 50px;
     border: 2px solid $sand-lighter;
     background-color: transparent;
     color: $gray-darkest;
-    cursor: pointer;
 
     &:focus {
       color: $beige-medium;
