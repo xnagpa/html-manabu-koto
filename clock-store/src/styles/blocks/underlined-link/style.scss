@@ -4,11 +4,6 @@
   font-weight: 500;
   color: $gray-darkest;
 
-  &:focus {
-    border-color: currentColor;
-    color: $red-darker;
-  }
-
   &:hover {
     border-color: currentColor;
     color: $beige-lightest;
@@ -17,5 +12,10 @@
   &:active {
     border-color: currentColor;
     color: $beige-lighter;
+  }
+
+  &:focus {
+    border-color: currentColor;
+    color: $red-darker;
   }
 }

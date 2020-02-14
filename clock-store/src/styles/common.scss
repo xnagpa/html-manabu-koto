@@ -75,15 +75,15 @@ A {
   text-decoration: none;
   font-family: $roboto-font-family;
 
-  &:focus {
-    color: $red-darker;
-  }
-
   &:hover {
     color: $sand-medium;
   }
 
   &:active {
     color: $beige-lighter;
+  }
+
+  &:focus {
+    color: $red-darker;
   }
 }
