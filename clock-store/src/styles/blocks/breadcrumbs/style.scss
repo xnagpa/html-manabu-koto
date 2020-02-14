@@ -9,16 +9,16 @@
     font-size: 14px;
     color: $gray-light;
 
+    &:hover {
+      color: $gray-darkest;
+    }
+
     &:active {
       color: $gray-medium;
     }
 
     &:focus {
       color: $gray-darker;
-    }
-
-    &:hover {
-      color: $gray-darkest;
     }
 
     &--current {

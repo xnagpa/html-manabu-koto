@@ -5,16 +5,16 @@
   &__link {
     color: $white-lighter;
 
+    &:hover {
+      color: $white-medium;
+    }
+
     &:active {
       color: $gray-medium;
     }
 
     &:focus {
       color: $gray-darker;
-    }
-
-    &:hover {
-      color: $white-medium;
     }
   }
 }

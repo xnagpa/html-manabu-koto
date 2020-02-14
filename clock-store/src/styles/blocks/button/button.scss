@@ -14,14 +14,14 @@
     background-color: $gray-darkest;
   }
 
-  &:active {
-    color: $beige-lighter;
-    background-color: $gray-medium;
-  }
-
   &:hover {
     color: $dark-gray-lighter;
     background-color: $gray-darker;
+  }
+
+  &:active {
+    color: $beige-lighter;
+    background-color: $gray-medium;
   }
 
   &--gray-darkest {
@@ -32,14 +32,14 @@
       background-color: $gray-darker;
     }
 
-    &:active {
-      color: $beige-lighter;
-      background-color: $gray-medium;
-    }
-
     &:hover {
       color: $beige-lightest;
       background-color: $dark-gray-darker;
+    }
+
+    &:active {
+      color: $beige-lighter;
+      background-color: $gray-medium;
     }
   }
 
@@ -51,13 +51,13 @@
       background-color: $red-darker;
     }
 
-    &:active {
-      color: $beige-lighter;
+    &:hover {
+      color: $dust-darkest;
       background-color: $red-darker;
     }
 
-    &:hover {
-      color: $dust-darkest;
+    &:active {
+      color: $beige-lighter;
       background-color: $red-darker;
     }
   }
@@ -73,14 +73,14 @@
       background-color: $sand-medium;
     }
 
-    &:active {
-      color: $beige-lighter;
-      background-color: $dust-darker;
-    }
-
     &:hover {
       color: $dust-darkest;
       background-color: $sand-lighter;
+    }
+
+    &:active {
+      color: $beige-lighter;
+      background-color: $dust-darker;
     }
   }
 }

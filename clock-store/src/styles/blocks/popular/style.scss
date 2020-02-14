@@ -18,16 +18,16 @@
       font-family: $playfair-font-family;
       color: $dust-darkest;
 
+      &:hover {
+        color: $gray-lighter;
+      }
+
       &:active {
         color: $gray-medium;
       }
 
       &:focus {
         color: $gray-darker;
-      }
-
-      &:hover {
-        color: $gray-lighter;
       }
     }
   }

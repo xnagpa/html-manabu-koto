@@ -79,11 +79,11 @@ A {
     color: $red-darker;
   }
 
-  &:active {
-    color: $beige-lighter;
-  }
-
   &:hover {
     color: $sand-medium;
+  }
+
+  &:active {
+    color: $beige-lighter;
   }
 }

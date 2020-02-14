@@ -9,13 +9,13 @@
     color: $red-darker;
   }
 
-  &:active {
-    border-color: currentColor;
-    color: $beige-lighter;
-  }
-
   &:hover {
     border-color: currentColor;
     color: $beige-lightest;
+  }
+
+  &:active {
+    border-color: currentColor;
+    color: $beige-lighter;
   }
 }
