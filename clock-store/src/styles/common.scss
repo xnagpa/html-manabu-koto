@@ -1,53 +1,3 @@
-$black: #000;
-$dark-gray-darker: #1B1A17;
-$dark-gray-medium: #1D1A1A;
-$dark-gray-light: #31302C;
-$dark-gray-lighter: #262421;
-
-$gray-darkest: #444240;
-$gray-darker: #636261;
-$gray-medium: #818181;
-$gray-light: #B6B6B6;
-$gray-lighter: rgba(100, 100, 100, .15);
-
-$dust-darkest: #555248;
-$dust-darker: #5C5C50;
-$dust-medium: #8B8371;
-
-$sand-medium: #A69876;
-$sand-lighter: #EAE3D4;
-
-$sand-lightest: #F7F5EF;
-
-$red-darker: #D75A4A;
-$beige-medium: #D4B098;
-$beige-lighter: #E6C8B4;
-$beige-lightest: rgba(212, 176, 152, .48);
-
-$white-medium: #FFF;
-$white-lighter: rgba(255, 255, 255, .75);
-
-@font-face {
-  font-family: RobotoRegular;
-  src: url("../fonts/Roboto/Roboto-Regular.ttf");
-}
-
-@font-face {
-  font-family: PlayfairDisplay;
-  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-VariableFont:wght.ttf");
-}
-
-@font-face {
-  font-family: Prata;
-  src: url("../fonts/Prata/Prata-Regular.ttf");
-}
-
-$roboto-font-family: RobotoRegular, Arial, sans-serif;
-
-$playfair-font-family: PlayfairDisplay, "Times New Roman", serif;
-
-$prata-font-family: Prata, "Times New Roman", serif;
-
 .visuallyhidden {
   position: absolute;
   width: 1px;
@@ -61,23 +11,23 @@ $prata-font-family: Prata, "Times New Roman", serif;
   overflow: hidden;
 }
 
-// BODY {
-//   font: 12px/1.2 $roboto-font-family;
-// }
+BODY {
+  font: 12px/1.2 $roboto-font-family;
+}
 
-// BODY > * {
-//   outline: 2px solid deeppink;
-// }
+BODY > * {
+  outline: 2px solid deeppink;
+}
 
-// BODY > * > * {
-//   outline: 2px dashed lime;
-//   outline-offset: -2px;
-// }
+BODY > * > * {
+  outline: 2px dashed lime;
+  outline-offset: -2px;
+}
 
-// BODY > * > * > * {
-//   outline: 2px dotted dodgerblue;
-//   outline-offset: -4px;
-// }
+BODY > * > * > * {
+  outline: 2px dotted dodgerblue;
+  outline-offset: -4px;
+}
 
 A {
   color: $dust-darkest;
