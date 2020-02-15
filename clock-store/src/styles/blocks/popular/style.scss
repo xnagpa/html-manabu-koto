@@ -1,0 +1,34 @@
+.popular {
+  min-height: 768px;
+
+  .popular-item {
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      font-family: $playfair-font-family;
+      text-transform: uppercase;
+    }
+
+    &__price {
+      font-size: 16px;
+      font-family: $prata-font-family;
+    }
+
+    &__link {
+      font-family: $playfair-font-family;
+      color: $dust-darkest;
+
+      &:hover {
+        color: $gray-lighter;
+      }
+
+      &:active {
+        color: $gray-medium;
+      }
+
+      &:focus {
+        color: $gray-darker;
+      }
+    }
+  }
+}

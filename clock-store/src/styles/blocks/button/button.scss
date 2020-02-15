@@ -1,0 +1,86 @@
+.button {
+  display: inline-block;
+  padding: 28px 38px;
+  background-color: $dark-gray-light;
+  font-size: 12px;
+  font-family: $roboto-font-family;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white-medium;
+  cursor: pointer;
+
+  &:hover {
+    color: $dark-gray-lighter;
+    background-color: $gray-darker;
+  }
+
+  &:active {
+    color: $beige-lighter;
+    background-color: $gray-medium;
+  }
+
+  &:focus {
+    color: $beige-medium;
+    background-color: $gray-darkest;
+  }
+
+  &--gray-darkest {
+    background-color: $gray-darkest;
+
+    &:hover {
+      color: $beige-lightest;
+      background-color: $dark-gray-darker;
+    }
+
+    &:active {
+      color: $beige-lighter;
+      background-color: $gray-medium;
+    }
+
+    &:focus {
+      color: $beige-medium;
+      background-color: $gray-darker;
+    }
+  }
+
+  &--beige-medium {
+    background-color: $beige-medium;
+
+    &:hover {
+      color: $dust-darkest;
+      background-color: $red-darker;
+    }
+
+    &:active {
+      color: $beige-lighter;
+      background-color: $red-darker;
+    }
+
+    &:focus {
+      color: $beige-medium;
+      background-color: $red-darker;
+    }
+  }
+
+  &--bordered {
+    padding: 20px 50px;
+    border: 2px solid $sand-lighter;
+    background-color: transparent;
+    color: $gray-darkest;
+
+    &:hover {
+      color: $dust-darkest;
+      background-color: $sand-lighter;
+    }
+
+    &:active {
+      color: $beige-lighter;
+      background-color: $dust-darker;
+    }
+
+    &:focus {
+      color: $beige-medium;
+      background-color: $sand-medium;
+    }
+  }
+}

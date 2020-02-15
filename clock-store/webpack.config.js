@@ -1,10 +1,13 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const globImporter = require('node-sass-glob-importer');
 const path = require('path');
 
 module.exports = {
   mode: 'development',
   entry: [
+    './src/views/product.html',
+    './src/views/catalog.html',
     './src/views/index.html',
     './src/styles/main.scss'
   ],
@@ -15,6 +18,14 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/views/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'catalog.html',
+      template: './src/views/catalog.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'product.html',
+      template: './src/views/product.html'
     }),
     new ExtractTextPlugin({filename: 'style.css'}),
   ],
@@ -27,7 +38,13 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
+          use: ['css-loader', {loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                importer: globImporter()
+              }
+            }
+          }]
         })
       },
       {

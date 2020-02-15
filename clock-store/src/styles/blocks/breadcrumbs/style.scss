@@ -1,0 +1,28 @@
+.breadcumbs {
+  min-height: 13px;
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    font-size: 14px;
+    color: $gray-light;
+
+    &:hover {
+      color: $gray-darkest;
+    }
+
+    &:active {
+      color: $gray-medium;
+    }
+
+    &:focus {
+      color: $gray-darker;
+    }
+
+    &--current {
+      color: $dust-darkest;
+    }
+  }
+}
