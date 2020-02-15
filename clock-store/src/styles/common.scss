@@ -2,19 +2,19 @@ BODY {
   font: 12px/1.2 $roboto-font-family;
 }
 
-BODY > * {
-  outline: 2px solid deeppink;
-}
+// BODY > * {
+//   outline: 2px solid deeppink;
+// }
 
-BODY > * > * {
-  outline: 2px dashed lime;
-  outline-offset: -2px;
-}
+// BODY > * > * {
+//   outline: 2px dashed lime;
+//   outline-offset: -2px;
+// }
 
-BODY > * > * > * {
-  outline: 2px dotted dodgerblue;
-  outline-offset: -4px;
-}
+// BODY > * > * > * {
+//   outline: 2px dotted dodgerblue;
+//   outline-offset: -4px;
+// }
 
 A {
   color: $dust-darkest;
