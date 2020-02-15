@@ -14,14 +14,14 @@
     background-color: $gray-darker;
   }
 
-  &:active {
-    color: $beige-lighter;
-    background-color: $gray-medium;
-  }
-
   &:focus {
     color: $beige-medium;
     background-color: $gray-darkest;
+  }
+
+  &:active {
+    color: $beige-lighter;
+    background-color: $gray-medium;
   }
 
   &--gray-darkest {
@@ -32,14 +32,14 @@
       background-color: $dark-gray-darker;
     }
 
-    &:active {
-      color: $beige-lighter;
-      background-color: $gray-medium;
-    }
-
     &:focus {
       color: $beige-medium;
       background-color: $gray-darker;
+    }
+
+    &:active {
+      color: $beige-lighter;
+      background-color: $gray-medium;
     }
   }
 
@@ -51,13 +51,13 @@
       background-color: $red-darker;
     }
 
-    &:active {
-      color: $beige-lighter;
+    &:focus {
+      color: $beige-medium;
       background-color: $red-darker;
     }
 
-    &:focus {
-      color: $beige-medium;
+    &:active {
+      color: $beige-lighter;
       background-color: $red-darker;
     }
   }
@@ -73,14 +73,14 @@
       background-color: $sand-lighter;
     }
 
-    &:active {
-      color: $beige-lighter;
-      background-color: $dust-darker;
-    }
-
     &:focus {
       color: $beige-medium;
       background-color: $sand-medium;
+    }
+
+    &:active {
+      color: $beige-lighter;
+      background-color: $dust-darker;
     }
   }
 }

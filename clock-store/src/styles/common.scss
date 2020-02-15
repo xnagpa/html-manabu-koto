@@ -24,12 +24,12 @@ A {
     color: $sand-medium;
   }
 
-  &:active {
-    color: $beige-lighter;
-  }
-
   &:focus {
     color: $red-darker;
+  }
+
+  &:active {
+    color: $beige-lighter;
   }
 }
 

@@ -9,13 +9,13 @@
     color: $beige-lightest;
   }
 
-  &:active {
-    border-color: currentColor;
-    color: $beige-lighter;
-  }
-
   &:focus {
     border-color: currentColor;
     color: $red-darker;
+  }
+
+  &:active {
+    border-color: currentColor;
+    color: $beige-lighter;
   }
 }
