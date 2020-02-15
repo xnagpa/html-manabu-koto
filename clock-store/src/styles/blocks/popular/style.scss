@@ -22,12 +22,12 @@
         color: $gray-lighter;
       }
 
-      &:active {
-        color: $gray-medium;
-      }
-
       &:focus {
         color: $gray-darker;
+      }
+
+      &:active {
+        color: $gray-medium;
       }
     }
   }

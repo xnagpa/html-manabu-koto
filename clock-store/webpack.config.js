@@ -9,7 +9,7 @@ module.exports = {
     './src/views/product.html',
     './src/views/catalog.html',
     './src/views/index.html',
-    './src/styles/main.scss'
+    './src/styles/style.scss'
   ],
   output: {
     path: path.resolve(__dirname, './dist'),

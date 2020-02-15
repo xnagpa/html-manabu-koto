@@ -10,36 +10,36 @@
   cursor: pointer;
 
   &:hover {
-    color: $dark-gray-lighter;
     background-color: $gray-darker;
-  }
-
-  &:active {
-    color: $beige-lighter;
-    background-color: $gray-medium;
+    color: $dark-gray-lighter;
   }
 
   &:focus {
-    color: $beige-medium;
     background-color: $gray-darkest;
+    color: $beige-medium;
+  }
+
+  &:active {
+    background-color: $gray-medium;
+    color: $beige-lighter;
   }
 
   &--gray-darkest {
     background-color: $gray-darkest;
 
     &:hover {
-      color: $beige-lightest;
       background-color: $dark-gray-darker;
-    }
-
-    &:active {
-      color: $beige-lighter;
-      background-color: $gray-medium;
+      color: $beige-lightest;
     }
 
     &:focus {
-      color: $beige-medium;
       background-color: $gray-darker;
+      color: $beige-medium;
+    }
+
+    &:active {
+      background-color: $gray-medium;
+      color: $beige-lighter;
     }
   }
 
@@ -47,18 +47,18 @@
     background-color: $beige-medium;
 
     &:hover {
+      background-color: $red-darker;
       color: $dust-darkest;
-      background-color: $red-darker;
-    }
-
-    &:active {
-      color: $beige-lighter;
-      background-color: $red-darker;
     }
 
     &:focus {
-      color: $beige-medium;
       background-color: $red-darker;
+      color: $beige-medium;
+    }
+
+    &:active {
+      background-color: $red-darker;
+      color: $beige-lighter;
     }
   }
 
@@ -69,18 +69,18 @@
     color: $gray-darkest;
 
     &:hover {
-      color: $dust-darkest;
       background-color: $sand-lighter;
-    }
-
-    &:active {
-      color: $beige-lighter;
-      background-color: $dust-darker;
+      color: $dust-darkest;
     }
 
     &:focus {
-      color: $beige-medium;
       background-color: $sand-medium;
+      color: $beige-medium;
+    }
+
+    &:active {
+      background-color: $dust-darker;
+      color: $beige-lighter;
     }
   }
 }
