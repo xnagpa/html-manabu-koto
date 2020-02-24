@@ -1,0 +1,36 @@
+.icon {
+  fill: $dark-gray-darker;
+}
+
+.icon--logo-header {
+  width: 103px;
+  height: 26px;
+  color: red;
+  stroke: url("#paint0_linear");
+}
+
+.icon--hamburger {
+  width: 18px;
+  height: 16px;
+}
+
+.icon--lense {
+  width: 16px;
+  height: 16px;
+}
+
+.icon--heart {
+  width: 19px;
+  height: 16px;
+}
+
+.icon--cart {
+  width: 18px;
+  height: 16px;
+}
+
+.icon--logo-footer {
+  .logo__gradient {
+    stroke: url("#paint1_linear");
+  }
+}

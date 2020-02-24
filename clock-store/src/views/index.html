@@ -6,12 +6,15 @@
   <body>
     <header class="page-header page-header--main-page">
       <div class="logo">
+        <svg class="icon icon--logo-header">
+          <use xlink:href="#logo"/>
+        </svg>
         <h1 class="visuallyhidden">Магазин часов</h1>
       </div>
 
       <nav class="main-nav">
         <button type="button" class="main-nav__toggler">
-          <svg class="logo__icon">
+          <svg class="icon icon--hamburger">
             <use xlink:href="#hamburger"/>
           </svg>
           Показать главное меню
@@ -38,13 +41,28 @@
       <nav class="service-nav">
         <ul class="service-nav__items">
           <li class="service-nav__item service-nav__item--search">
-            <a class="service-nav__link" href="/">Поиск</a>
+            <a class="service-nav__link" href="/">
+              <svg class="icon icon--lense">
+                <use xlink:href="#lense"/>
+              </svg>
+              Поиск
+            </a>
           </li>
           <li class="service-nav__item service-nav__item--favorite">
-            <a class="service-nav__link" href="/">Избранное</a>
+            <a class="service-nav__link" href="/">
+              <svg class="icon icon--heart">
+                <use xlink:href="#heart"/>
+              </svg>
+              Избранное
+            </a>
           </li>
           <li class="service-nav__item service-nav__item--shopping-cart">
-            <a class="service-nav__link" href="/">Корзина</a>
+            <a class="service-nav__link" href="/">
+              <svg class="icon icon--cart">
+                <use xlink:href="#cart"/>
+              </svg>
+              Корзина
+            </a>
           </li>
         </ul>
       </nav>
