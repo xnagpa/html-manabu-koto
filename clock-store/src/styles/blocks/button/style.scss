@@ -8,6 +8,7 @@
   text-transform: uppercase;
   color: $white-medium;
   cursor: pointer;
+  outline: none;
 
   &:hover {
     background-color: $gray-darker;
@@ -58,6 +59,28 @@
 
     &:active {
       background-color: $red-darker;
+      color: $beige-lighter;
+    }
+  }
+
+  &--main-nav {
+    padding: 0;
+    border: 0;
+    color: black;
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      color: $dust-darkest;
+    }
+
+    &:focus {
+      background-color: transparent;
+      color: $beige-medium;
+    }
+
+    &:active {
+      background-color: transparent;
       color: $beige-lighter;
     }
   }

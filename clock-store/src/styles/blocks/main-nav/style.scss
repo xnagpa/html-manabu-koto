@@ -1,9 +1,18 @@
 .main-nav {
-  min-height: 103px;
+  &__menu-toggler {
+    position: absolute;
+    left: 55px;
+    top: 5px;
+  }
 
   &__item {
-    list-style: none;
     display: inline;
+    margin-right: 65px;
+    list-style: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__link {

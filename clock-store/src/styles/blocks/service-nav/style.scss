@@ -1,7 +1,11 @@
 .service-nav {
-  min-height: 103px;
+  &__items {
+    display: flex;
+    margin-top: 5px;
+  }
 
-  &__link {
-    
+  &__item {
+    margin-right: 23px;
+    list-style: none;
   }
 }

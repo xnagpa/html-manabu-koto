@@ -13,13 +13,13 @@
       </div>
 
       <nav class="main-nav">
-        <button type="button" class="main-nav__toggler">
+        <button type="button" class="main-nav__menu-toggler button button--main-nav js-show-main-menu">
           <svg class="icon icon--hamburger">
             <use xlink:href="#hamburger"/>
           </svg>
-          Показать главное меню
+          <span class="visuallyhidden">Показать главное меню</span>
         </button>
-        <ul class="main-nav__items">
+        <ul class="main-nav__items visuallyhidden js-main-menu">
           <li class="main-nav__item">
             <a class="main-nav__link" href="/">Главная</a>
           </li>
@@ -45,7 +45,7 @@
               <svg class="icon icon--lense">
                 <use xlink:href="#lense"/>
               </svg>
-              Поиск
+              <span class="visuallyhidden">Поиск</span>
             </a>
           </li>
           <li class="service-nav__item service-nav__item--favorite">
@@ -53,7 +53,7 @@
               <svg class="icon icon--heart">
                 <use xlink:href="#heart"/>
               </svg>
-              Избранное
+              <span class="visuallyhidden">Избранное</span>
             </a>
           </li>
           <li class="service-nav__item service-nav__item--shopping-cart">
@@ -61,7 +61,7 @@
               <svg class="icon icon--cart">
                 <use xlink:href="#cart"/>
               </svg>
-              Корзина
+              <span class="visuallyhidden">Корзина</span>
             </a>
           </li>
         </ul>

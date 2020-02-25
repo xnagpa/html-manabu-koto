@@ -1,3 +1,6 @@
 .page-header {
-  min-height: 805px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 55px;
 }
