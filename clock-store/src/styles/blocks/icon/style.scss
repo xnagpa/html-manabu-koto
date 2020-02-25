@@ -1,12 +1,13 @@
-.icon {
-  fill: $dark-gray-darker;
-}
+// .icon {
+//   fill: $dark-gray-darker;
+// }
 
 .icon--logo-header {
-  width: 103px;
-  height: 26px;
-  color: red;
-  stroke: url("#paint0_linear");
+  color: $dust-darker;
+}
+
+.icon--logo-header .gsvg-logo__circle {
+  fill: "url(#linear-gradient-logo)";
 }
 
 .page-header--main-page .icon--logo-header {
