@@ -1,12 +1,16 @@
 .main-nav {
   &__menu-toggler {
     position: absolute;
-    left: 55px;
-    top: 5px;
+    left: 35px;
+    top: 33px;
+  }
+
+  &__items {
+    display: flex;
+    transform: translateY(50%);
   }
 
   &__item {
-    display: inline;
     margin-right: 65px;
     list-style: none;
 

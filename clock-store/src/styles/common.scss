@@ -8,10 +8,10 @@ BODY {
 //   outline: 2px solid deeppink;
 // }
 
-BODY > * > * {
-  outline: 2px dashed lime;
-  outline-offset: -2px;
-}
+// BODY > * > * {
+//   outline: 2px dashed lime;
+//   outline-offset: -1px;
+// }
 
 // BODY > * > * > * {
 //   outline: 2px dotted dodgerblue;
@@ -21,6 +21,10 @@ BODY > * > * {
 UL {
   margin: 0;
   padding: 0;
+}
+
+LI {
+  list-style: none;
 }
 
 A {

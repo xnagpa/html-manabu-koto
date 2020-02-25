@@ -7,7 +7,10 @@
     <header class="page-header">
       <h1 class="visuallyhidden">Каталог</h1>
       <a href="/" class="logo">
-        На главную
+        <svg class="icon icon--logo-header">
+          <use xlink:href="#logo"/>
+        </svg>
+        <span class="visuallyhidden">На главную</span>
       </a>
 
       <nav class="main-nav">
@@ -33,15 +36,28 @@
       <nav class="service-nav">
         <ul class="service-nav__items">
           <li class="service-nav__item service-nav__item--search">
-            <a class="service-nav__link" href="/">Поиск</a>
+            <a class="service-nav__link" href="/">
+              <svg class="icon icon--lense">
+                <use xlink:href="#lense"/>
+              </svg>
+              <span class="visuallyhidden">Поиск</span>
+            </a>
           </li>
-
           <li class="service-nav__item service-nav__item--favorite">
-            <a class="service-nav__link" href="/">Избранное</a>
+            <a class="service-nav__link" href="/">
+              <svg class="icon icon--heart">
+                <use xlink:href="#heart"/>
+              </svg>
+              <span class="visuallyhidden">Избранное</span>
+            </a>
           </li>
-
           <li class="service-nav__item service-nav__item--shopping-cart">
-            <a class="service-nav__link" href="/">Корзина</a>
+            <a class="service-nav__link" href="/">
+              <svg class="icon icon--cart">
+                <use xlink:href="#cart"/>
+              </svg>
+              <span class="visuallyhidden">Корзина</span>
+            </a>
           </li>
         </ul>
       </nav>
