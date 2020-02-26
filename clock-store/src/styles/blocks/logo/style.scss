@@ -1,10 +1,12 @@
 .logo {
-  margin-left: 60px;
-
   &__icon {
     width: 103px;
     height: 26px;
     margin-top: 5px;
     color: $dust-darker;
   }
+}
+
+.page-header--main-page .logo {
+  margin-left: 60px;
 }
