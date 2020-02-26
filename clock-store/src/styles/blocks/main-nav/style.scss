@@ -1,10 +1,4 @@
 .main-nav {
-  &__menu-toggler {
-    position: absolute;
-    left: 35px;
-    top: 33px;
-  }
-
   &__items {
     display: flex;
     transform: translateY(50%);
@@ -16,6 +10,31 @@
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+  &__menu-toggler {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    padding: 0;
+    border: 0;
+    color: black;
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      color: $dust-darkest;
+    }
+
+    &:focus {
+      background-color: transparent;
+      color: $beige-medium;
+    }
+
+    &:active {
+      background-color: transparent;
+      color: $beige-lighter;
     }
   }
 

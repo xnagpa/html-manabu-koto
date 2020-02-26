@@ -63,28 +63,6 @@
     }
   }
 
-  &--main-nav {
-    padding: 0;
-    border: 0;
-    color: black;
-    background-color: transparent;
-
-    &:hover {
-      background-color: transparent;
-      color: $dust-darkest;
-    }
-
-    &:focus {
-      background-color: transparent;
-      color: $beige-medium;
-    }
-
-    &:active {
-      background-color: transparent;
-      color: $beige-lighter;
-    }
-  }
-
   &--bordered {
     padding: 20px 50px;
     border: 2px solid $sand-lighter;

@@ -4,6 +4,6 @@
       <stop stop-color="#555248" offset="0%"/><stop stop-color="#1B1A17" stop-opacity="0" offset="100%"/>
     </linearGradient>
   </defs>
-  <text class="svg-logo__text" fill="url(#linear-gradient-logo)" xml:space="preserve" style="white-space: pre" font-family="Playfair Display" font-size="12" letter-spacing="0.14em"><tspan x="22.6841" y="13.984">CONQUEST</tspan></text>
-  <path class="svg-logo__circle" d="M8.927.453a9.625 9.625 0 015.033.8 9.553 9.553 0 014.49 4.205 9.59 9.59 0 01-3.923 12.993 9.553 9.553 0 01-5.645 1.075A9.597 9.597 0 015.458 1.535 9.57 9.57 0 018.927.453zm4.293 1.571a8.63 8.63 0 00-3.744-.615v17.167a8.553 8.553 0 004.58-1.007A8.59 8.59 0 0017.568 5.93a8.552 8.552 0 00-3.723-3.623l-.298-.142-.328-.14zm-4.745-.496a8.59 8.59 0 00-2.545.888 8.597 8.597 0 002.546 16.04L8.475 1.527z" fill-rule="nonzero"/>
+  <text class="svg-logo__text" xml:space="preserve" style="white-space: pre" font-family="Playfair Display" font-size="12" letter-spacing="0.14em"><tspan x="22.6841" y="13.984">CONQUEST</tspan></text>
+  <path class="svg-logo__circle" fill="url(#linear-gradient-logo)" d="M8.927.453a9.625 9.625 0 015.033.8 9.553 9.553 0 014.49 4.205 9.59 9.59 0 01-3.923 12.993 9.553 9.553 0 01-5.645 1.075A9.597 9.597 0 015.458 1.535 9.57 9.57 0 018.927.453zm4.293 1.571a8.63 8.63 0 00-3.744-.615v17.167a8.553 8.553 0 004.58-1.007A8.59 8.59 0 0017.568 5.93a8.552 8.552 0 00-3.723-3.623l-.298-.142-.328-.14zm-4.745-.496a8.59 8.59 0 00-2.545.888 8.597 8.597 0 002.546 16.04L8.475 1.527z" fill-rule="nonzero"/>
 </svg>
