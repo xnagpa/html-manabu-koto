@@ -1,7 +1,13 @@
 .main-nav {
+  height: 33px;
+
   &__items {
     display: flex;
     transform: translateY(50%);
+
+    &--main-page {
+      margin-left: 20px;
+    }
   }
 
   &__item {
@@ -21,6 +27,7 @@
     border: 0;
     color: black;
     background-color: transparent;
+    outline: none;
 
     &:hover {
       background-color: transparent;

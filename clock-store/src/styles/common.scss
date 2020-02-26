@@ -8,10 +8,10 @@ BODY {
 //   outline: 2px solid deeppink;
 // }
 
-// BODY > * > * {
-//   outline: 2px dashed lime;
-//   outline-offset: -1px;
-// }
+BODY > * > * {
+  outline: 2px dashed lime;
+  outline-offset: -1px;
+}
 
 // BODY > * > * > * {
 //   outline: 2px dotted dodgerblue;
@@ -45,6 +45,7 @@ A {
 }
 
 .visuallyhidden {
+  display: none;
   position: absolute;
   width: 1px;
   height: 1px;

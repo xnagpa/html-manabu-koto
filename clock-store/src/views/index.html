@@ -5,7 +5,7 @@
   </head>
   <body>
     <header class="page-header page-header--main-page">
-      <div class="logo">
+      <div class="logo js-logo">
         <svg class="icon icon--logo-header">
           <use xlink:href="#logo"/>
         </svg>
@@ -14,12 +14,17 @@
 
       <nav class="main-nav">
         <button type="button" class="main-nav__menu-toggler js-show-main-menu">
-          <svg class="icon icon--hamburger">
+          <svg class="icon icon--hamburger js-hamburger">
             <use xlink:href="#hamburger"/>
           </svg>
+
+          <svg class="icon icon--close js-close visuallyhidden">
+            <use xlink:href="#close"/>
+          </svg>
+
           <span class="visuallyhidden">Показать главное меню</span>
         </button>
-        <ul class="main-nav__items visuallyhidden js-main-menu">
+        <ul class="main-nav__items main-nav__items--main-page visuallyhidden js-main-menu">
           <li class="main-nav__item">
             <a class="main-nav__link" href="/">Главная</a>
           </li>
