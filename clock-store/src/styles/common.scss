@@ -18,11 +18,6 @@ BODY > * > * {
 //   outline-offset: -4px;
 // }
 
-UL {
-  margin: 0;
-  padding: 0;
-}
-
 LI {
   list-style: none;
 }
@@ -45,7 +40,6 @@ A {
 }
 
 .visuallyhidden {
-  display: none;
   position: absolute;
   width: 1px;
   height: 1px;

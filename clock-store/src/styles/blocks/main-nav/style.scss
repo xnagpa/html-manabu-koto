@@ -3,6 +3,8 @@
 
   &__items {
     display: flex;
+    margin: 0;
+    padding: 0;
     transform: translateY(50%);
 
     &--main-page {
