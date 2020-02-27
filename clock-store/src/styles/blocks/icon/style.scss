@@ -2,6 +2,7 @@
   fill: $dark-gray-darker;
 
   &--hamburger {
+    display: none;
     width: 18px;
     height: 16px;
   }
@@ -26,3 +27,6 @@
     height: 16px;
   }
 }
+
+.js-main-nav--hidden .icon--close { display: none; }
+.js-main-nav--hidden .icon--hamburger { display: block; }

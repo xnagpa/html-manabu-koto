@@ -1,11 +1,9 @@
-const mainMenu =  document.querySelector('.js-main-menu');
-const mainMenuButton = document.querySelector('.js-show-main-menu-button');
+const mainMenu =  document.querySelector('.js-main-nav--minimized');
+const mainMenuList =  document.querySelector('.js-main-menu-list');
+const mainMenuToggler = document.querySelector('.js-main-menu-toggler');
 
-const hamburgerIcon = mainMenuButton.querySelector('.js-hamburger-icon');
-const closeIcon = mainMenuButton.querySelector('.js-close-icon');
-
-mainMenuButton.addEventListener('click', () => {
-  mainMenu.classList.toggle('visuallyhidden');
-  closeIcon.classList.toggle('hidden');
-  hamburgerIcon.classList.toggle('hidden');
+mainMenuToggler.addEventListener('click', () => {
+  //Hides main menu
+  mainMenu.classList.toggle('js-main-nav--minimized');
+  mainMenuList.classList.toggle('visuallyhidden');
 });

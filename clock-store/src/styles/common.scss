@@ -48,6 +48,5 @@ A {
   overflow: hidden;
 }
 
-.hidden {
-  display: none !important;
-}
+.js-main-nav--minimized .icon--close { display: none; }
+.js-main-nav--minimized .icon--hamburger { display: block; }
