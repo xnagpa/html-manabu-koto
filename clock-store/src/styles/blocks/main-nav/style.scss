@@ -53,3 +53,6 @@
     color: $dust-darkest;
   }
 }
+
+.js-main-nav--minimized .icon--close { display: block; }
+.js-main-nav--minimized .icon--hamburger { display: none; }
