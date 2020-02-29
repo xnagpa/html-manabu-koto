@@ -1,5 +1,5 @@
-const mainMenuToggler = document.querySelector('.js-main-menu-toggler');
 const mainMenu =  document.querySelector('.js-main-nav');
+const mainMenuToggler = document.querySelector('.js-main-menu-toggler');
 const mainMenuList =  document.querySelector('.js-main-menu-list');
 
 function toggleMainMenuVisibility() {
