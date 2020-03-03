@@ -23,6 +23,7 @@
   }
 
   &__menu-toggler {
+    z-index: 999;
     position: absolute;
     left: 20px;
     top: 5px;
@@ -51,6 +52,24 @@
   &__link {
     font-size: 14px;
     color: $dust-darkest;
+  }
+}
+
+.page-header--main-page {
+  & .main-nav__items {
+    position: absolute;
+    top: -90px;
+    left: -15px;
+    display: block;
+    padding-top: 65px;
+    padding-left: 10px;
+    padding-right: 40px;
+    background-color: $white-medium;
+    box-shadow: 0 0 10px $gray-medium;
+  }
+
+  & .main-nav__item {
+    margin-bottom: 7px;
   }
 }
 
