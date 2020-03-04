@@ -3,7 +3,7 @@ const mainMenuToggler = document.querySelector('.js-main-menu-toggler');
 const mainMenuList =  document.querySelector('.js-main-menu-list');
 
 function toggleMainMenuVisibility() {
-  mainMenu.classList.toggle('js-main-nav--minimized');
+  mainMenu.classList.toggle('js-main-nav--open');
   mainMenuList.classList.toggle('visuallyhidden');
 }
 
