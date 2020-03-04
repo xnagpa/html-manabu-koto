@@ -2,7 +2,6 @@
   &__items {
     display: flex;
     margin: 0;
-    margin-top: 40px;
     padding: 0;
     list-style: none;
   }
@@ -20,7 +19,7 @@
     z-index: 999;
     position: absolute;
     left: 20px;
-    top: 5px;
+    top: 2px;
     padding: 0;
     border: 0;
     color: $dark-gray-darker;
@@ -60,6 +59,7 @@
 .main-nav__items--main-page {
   flex-direction: column;
   margin-left: 20px;
+  margin-top: 40px;
   margin-right: 50px;
 }
 
