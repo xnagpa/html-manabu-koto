@@ -77,14 +77,13 @@
   &::before {
     content: "";
     position: absolute;
+    z-index: -1;
     top: -20px;
     left: -20px;
     bottom: -20px;
     right: -20px;
     background-color: $white-medium;
     box-shadow: 0 0 10px $gray-medium;
-    outline: 1px pink;
-    z-index: -1;
   }
 }
 
