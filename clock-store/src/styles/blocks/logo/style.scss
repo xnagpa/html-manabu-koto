@@ -1,9 +1,10 @@
 .logo {
+  height: 20px;
   z-index: 999;
 
   &__icon {
     width: 103px;
-    height: 26px;
+    height: 20px;
     color: $dust-darker;
   }
 }

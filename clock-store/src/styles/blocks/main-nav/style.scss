@@ -18,10 +18,11 @@
   }
 
   &__menu-toggler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     z-index: 999;
-    position: absolute;
-    left: 20px;
-    top: 2px;
+    height: 20px;
     padding: 0;
     border: 0;
     color: $dark-gray-darker;
