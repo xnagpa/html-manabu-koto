@@ -1,6 +1,6 @@
 .page-header {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
