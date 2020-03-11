@@ -235,23 +235,25 @@
       </section>
 
       <section class="subscription">
-        <h2 class="subscription__title">
-          Подписка на рассылку
-        </h2>
+        <div class="page-container">
+          <h2 class="subscription__title">
+            Подписка на рассылку
+          </h2>
 
-        <div class="subscription__slogan">
-          Получить скидку 10% на первую покупку
+          <div class="subscription__slogan">
+            Получить скидку 10% на первую покупку
+          </div>
+
+          <form class="subscription__form">
+            <label class="subscription__label" for="email">
+              Email
+            </label>
+
+            <input class="subscription__text" id="email" name="email" type="email" required>
+
+            <button class="button subscription__submit" type="submit">Подписаться</button>
+          </form>
         </div>
-
-        <form class="subscription__form">
-          <label class="subscription__label" for="email">
-            Email
-          </label>
-
-          <input class="subscription__text" id="email" name="email" type="email" required>
-
-          <button class="button subscription__submit" type="submit">Подписаться</button>
-        </form>
       </section>
 
       <section class="page-section accessories">
@@ -293,87 +295,89 @@
     </main>
 
     <footer class="page-footer">
-      <h2 class="visuallyhidden">Контакты и важные ссылки</h2>
+      <div class="page-container">
+        <h2 class="visuallyhidden">Контакты и важные ссылки</h2>
 
-      <section class="page-footer__section">
-        <h3 class="page-footer__section-title visuallyhidden">Контакты компании</h3>
+        <section class="page-footer__section">
+          <h3 class="page-footer__section-title visuallyhidden">Контакты компании</h3>
 
-        <a class="logo logo--footer" href="/">На главную страницу</a>
+          <div class="logo logo--footer"></div>
 
-        <ul class="page-footer__items">
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="tel:8(499)450-47-97">8 (499) 450-47-97</a>
-          </li>
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
-          </li>
-        </ul>
-      </section>
+          <ul class="page-footer__items">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="tel:8(499)450-47-97">8 (499) 450-47-97</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="page-footer__section">
-        <h3 class="page-footer__section-title">О компании</h3>
+        <section class="page-footer__section">
+          <h3 class="page-footer__section-title">О компании</h3>
 
-        <ul class="page-footer__items">
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Наши магазины</a>
-          </li>
+          <ul class="page-footer__items">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Наши магазины</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Вакансии</a>
-          </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Вакансии</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Сертификаты</a>
-          </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Сертификаты</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Отзывы</a>
-          </li>
-        </ul>
-      </section>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Отзывы</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="page-footer__section">
-        <h3 class="page-footer__section-title">Покупателям</h3>
+        <section class="page-footer__section">
+          <h3 class="page-footer__section-title">Покупателям</h3>
 
-        <ul class="page-footer__items">
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Каталог товаров</a>
-          </li>
+          <ul class="page-footer__items">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Каталог товаров</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Как заказать?</a>
-          </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Как заказать?</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">FAQ</a>
-          </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">FAQ</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Корпоративным клиентам</a>
-          </li>
-        </ul>
-      </section>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Корпоративным клиентам</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="page-footer__section">
-        <h3 class="page-footer__section-title">Оплата и доставка</h3>
+        <section class="page-footer__section">
+          <h3 class="page-footer__section-title">Оплата и доставка</h3>
 
-        <ul class="page-footer__items">
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Способы оплаты</a>
-          </li>
+          <ul class="page-footer__items">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Способы оплаты</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Время доставки</a>
-          </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Время доставки</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Гарантии и ремонт</a>
-          </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Гарантии и ремонт</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Возврат и компенсация</a>
-          </li>
-        </ul>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Возврат и компенсация</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </footer>
   </body>
