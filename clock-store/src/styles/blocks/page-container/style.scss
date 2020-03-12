@@ -2,5 +2,10 @@
   position: relative;
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 1205px;
+  width: 1205px;
+  box-sizing: border-box;
+
+  &--main-page {
+    width: 1265px;
+  }
 }
