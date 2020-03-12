@@ -7,7 +7,7 @@ function toggleMainMenuVisibility() {
   mainMenuList.classList.toggle('visuallyhidden');
 }
 
-mainMenuToggler.addEventListener('click', toggleMainMenuVisibility);
+mainMenuToggler && mainMenuToggler.addEventListener('click', toggleMainMenuVisibility);
 
 
 
