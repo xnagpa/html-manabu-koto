@@ -1,4 +1,6 @@
 .service-nav {
+  align-self: flex-end;
+
   &__items {
     display: flex;
     margin-top: 0;
@@ -7,6 +9,7 @@
   }
 
   &__item {
+    height: 16px;
     margin-right: 23px;
     list-style: none;
 
