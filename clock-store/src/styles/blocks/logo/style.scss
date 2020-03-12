@@ -2,13 +2,13 @@
   height: 20px;
   z-index: 999;
 
+  &--main-page {
+    margin-left: 60px;
+  }
+
   &__icon {
     width: 103px;
     height: 20px;
     color: $dust-darker;
   }
-}
-
-.page-header--main-page .logo {
-  margin-left: 60px;
 }
