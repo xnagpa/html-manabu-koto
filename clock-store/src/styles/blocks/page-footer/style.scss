@@ -3,6 +3,10 @@
   margin: 0 auto;
   background-color: $gray-darkest;
 
+  &__container {
+    max-width: 980px;
+  }
+
   &__link {
     color: $white-lighter;
 

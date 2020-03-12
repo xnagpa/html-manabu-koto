@@ -3,4 +3,9 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &--main-page {
+    margin: 0 auto;
+    max-width: 1265px;
+  }
 }

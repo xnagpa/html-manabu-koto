@@ -1,5 +1,8 @@
 .page-container {
   position: relative;
-  max-width: 900px;
   margin: 0 auto;
+
+  &--inner {
+    max-width: 1165px;
+  }
 }

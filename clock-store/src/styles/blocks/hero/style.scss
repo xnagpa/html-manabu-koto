@@ -1,5 +1,9 @@
 .hero {
   margin: 0 auto;
+
+  &__container {
+    max-width: 1265px;
+  }
 }
 
 .hero-view {
