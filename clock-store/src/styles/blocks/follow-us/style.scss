@@ -1,3 +1,5 @@
 .follow-us {
-  min-height: 560px;
+  &__container {
+    width: 1170px;
+  }
 }

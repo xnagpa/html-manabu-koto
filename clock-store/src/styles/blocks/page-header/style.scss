@@ -1,3 +1,9 @@
 .page-header {
-  min-height: 805px;
+  margin-top: 33px;
+}
+
+.page-header__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }

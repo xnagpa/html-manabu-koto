@@ -1,6 +1,11 @@
 .page-footer {
   min-height: 275px;
+  margin: 0 auto;
   background-color: $gray-darkest;
+
+  &__container {
+    width: 1020px;
+  }
 
   &__link {
     color: $white-lighter;

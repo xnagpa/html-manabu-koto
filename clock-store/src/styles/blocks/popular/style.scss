@@ -1,6 +1,10 @@
 .popular {
   min-height: 768px;
 
+  &__container {
+    width: 1175px;
+  }
+
   .popular-item {
     &__title {
       font-size: 18px;

@@ -4,148 +4,185 @@
     <title>Интернет магазин часов</title>
   </head>
   <body>
-    <header class="page-header page-header--main-page">
-      <div class="logo">
-        <h1 class="visuallyhidden">Магазин часов</h1>
+    <header class="page-header">
+      <div class="page-container page-container--main-page page-header__container">
+        <div class="logo logo--main-page">
+          <svg class="logo__icon">
+            <use xlink:href="#logo-dark"/>
+          </svg>
+          <h1 class="visuallyhidden">Магазин часов</h1>
+        </div>
+
+        <!--Absolute -->
+        <nav class="main-nav main-nav--main-page js-main-nav">
+          <button type="button" class="main-nav__menu-toggler js-main-menu-toggler">
+            <svg class="icon icon--hamburger">
+              <use xlink:href="#hamburger"/>
+            </svg>
+
+            <svg class="icon icon--close">
+              <use xlink:href="#close"/>
+            </svg>
+
+            <span class="visuallyhidden">Показать главное меню</span>
+          </button>
+          <ul class="main-nav__items main-nav__items--main-page js-main-menu-list visuallyhidden">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/">Главная</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="./catalog.html">Каталог</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="./product.html">Продукт</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="service-nav">
+          <ul class="service-nav__items">
+            <li class="service-nav__item service-nav__item--search">
+              <a class="service-nav__link" href="/">
+                <svg class="icon icon--lense">
+                  <use xlink:href="#lense"/>
+                </svg>
+                <span class="visuallyhidden">Поиск</span>
+              </a>
+            </li>
+            <li class="service-nav__item service-nav__item--favorite">
+              <a class="service-nav__link" href="/">
+                <svg class="icon icon--heart">
+                  <use xlink:href="#heart"/>
+                </svg>
+                <span class="visuallyhidden">Избранное</span>
+              </a>
+            </li>
+            <li class="service-nav__item service-nav__item--shopping-cart">
+              <a class="service-nav__link" href="/">
+                <svg class="icon icon--cart">
+                  <use xlink:href="#cart"/>
+                </svg>
+                <span class="visuallyhidden">Корзина</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <nav class="main-nav">
-        <button type="button" class="main-nav__toggler">Показать главное меню</button>
-        <ul class="main-nav__items">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="/">Главная</a>
-          </li>
-
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="./catalog.html">Каталог</a>
-          </li>
-
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="./product.html">Продукт</a>
-          </li>
-
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="/">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
-      <nav class="service-nav">
-        <ul class="service-nav__items">
-          <li class="service-nav__item service-nav__item--search">
-            <a class="service-nav__link" href="/">Поиск</a>
-          </li>
-          <li class="service-nav__item service-nav__item--favorite">
-            <a class="service-nav__link" href="/">Избранное</a>
-          </li>
-          <li class="service-nav__item service-nav__item--shopping-cart">
-            <a class="service-nav__link" href="/">Корзина</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main class="page-main">
       <section class="hero">
-        <h2 class="visuallyhidden">Новая коллекция</h2>
+        <div class="page-container page-container--main-page">
+          <h2 class="visuallyhidden">Новая коллекция</h2>
 
-        <div class="hero-product">
-          <div class="hero-product__content">
-            <h3 class="hero-product__title">
-              Весна/Лето 2019
-              <span class="hero-product__title-text">
-                Коллекция
-              </span>
-            </h3>
-            <p class="hero-product__text">
-                Швейцарские часы в наличии в Москве и с доставкой по всему миру
-            </p>
-            <a class="hero-product__link button button--gray-darkest" href="/">Смотреть каталог</a>
+          <div class="hero-product">
+            <div class="hero-product__content">
+              <h3 class="hero-product__title">
+                Весна/Лето 2019
+                <span class="hero-product__title-text">
+                  Коллекция
+                </span>
+              </h3>
+              <p class="hero-product__text">
+                  Швейцарские часы в наличии в Москве и с доставкой по всему миру
+              </p>
+              <a class="hero-product__link button button--gray-darkest" href="/">Смотреть каталог</a>
+            </div>
+
+            <div class="hero-view">
+              <p class="hero-view__price">22 000 ₽</p>
+              <p class="hero-view__dimensions">28 мм диаметр</p>
+              <img alt="Часы из коллекции весна/лето 2019" class="hero-view__image" src="https://via.placeholder.com/502x804.png"/>
+            </div>
           </div>
 
-          <div class="hero-view">
-            <p class="hero-view__price">22 000 ₽</p>
-            <p class="hero-view__dimensions">28 мм диаметр</p>
-            <img alt="Часы из коллекции весна/лето 2019" class="hero-view__image" src="https://via.placeholder.com/502x804.png"/>
-          </div>
+          <ul class="socials hero__socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="/">Подписаться на  вконтакте</a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link socials__link--fb" href="/">Подписаться на  фейсбук</a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link socials__link--tw" href="/">Подписаться на  твиттер</a>
+            </li>
+          </ul>
         </div>
-
-        <ul class="socials hero__socials">
-          <li class="socials__item">
-            <a class="socials__link socials__link--vk" href="/">Подписаться на  вконтакте</a>
-          </li>
-
-          <li class="socials__item">
-            <a class="socials__link socials__link--fb" href="/">Подписаться на  фейсбук</a>
-          </li>
-
-          <li class="socials__item">
-            <a class="socials__link socials__link--tw" href="/">Подписаться на  твиттер</a>
-          </li>
-        </ul>
       </section>
 
       <section class="page-section popular">
-        <h2 class="page-section__title  popular__title">Популярные модели</h2>
+        <div class="page-container popular__container">
+          <h2 class="page-section__title popular__title">Популярные модели</h2>
 
-        <a class="underlined-link popular__link" href="/">Смотреть все</a>
+          <a class="underlined-link popular__link" href="/">Смотреть все</a>
 
-        <ul class="popular__items">
-          <li class="popular-item popular-item--narrow">
-            <h3 class="popular-item__title">Rado</h3>
-            <div class="popular-item__price">65 300 ₽</div>
-            <img class="popular-item__image" src="https://via.placeholder.com/370x467.png" alt="Часы, которые вы не можете себе позволить"/>
-            <a class="popular-item__link" href="">Подробнее</a>
-          </li>
+          <ul class="popular__items">
+            <li class="popular-item popular-item--narrow">
+              <h3 class="popular-item__title">Rado</h3>
+              <div class="popular-item__price">65 300 ₽</div>
+              <img class="popular-item__image" src="https://via.placeholder.com/370x467.png" alt="Часы, которые вы не можете себе позволить"/>
+              <a class="popular-item__link" href="">Подробнее</a>
+            </li>
 
-          <li class="popular-item popular-item--wide">
-            <h3 class="popular-item__title">Rado</h3>
-            <div class="popular-item__price">65 300 ₽</div>
-            <img class="popular-item__image" src="https://via.placeholder.com/370x467.png" alt="Часы, которые вы не можете себе позволить"/>
-            <a class="popular-item__link" href="">Подробнее</a>
-          </li>
+            <li class="popular-item popular-item--wide">
+              <h3 class="popular-item__title">Rado</h3>
+              <div class="popular-item__price">65 300 ₽</div>
+              <img class="popular-item__image" src="https://via.placeholder.com/370x467.png" alt="Часы, которые вы не можете себе позволить"/>
+              <a class="popular-item__link" href="">Подробнее</a>
+            </li>
 
-          <li class="popular-item">
-            <h3 class="popular-item__title">Rado</h3>
-            <div class="popular-item__price">65 300 ₽</div>
-            <img class="popular-item__image" src="https://via.placeholder.com/565x220.png" alt="Часы, которые вы не можете себе позволить"/>
-            <a class="popular-item__link" href="">Подробнее</a>
-          </li>
+            <li class="popular-item">
+              <h3 class="popular-item__title">Rado</h3>
+              <div class="popular-item__price">65 300 ₽</div>
+              <img class="popular-item__image" src="https://via.placeholder.com/565x220.png" alt="Часы, которые вы не можете себе позволить"/>
+              <a class="popular-item__link" href="">Подробнее</a>
+            </li>
 
-          <li class="popular-item">
-            <h3 class="popular-item__title">Rado</h3>
-            <div class="popular-item__price">65 300 ₽</div>
-            <img class="popular-item__image" src="https://via.placeholder.com/565x220.png" alt="Часы, которые вы не можете себе позволить"/>
-            <a class="popular-item__link" href="">Подробнее</a>
-          </li>
-        </ul>
+            <li class="popular-item">
+              <h3 class="popular-item__title">Rado</h3>
+              <div class="popular-item__price">65 300 ₽</div>
+              <img class="popular-item__image" src="https://via.placeholder.com/565x220.png" alt="Часы, которые вы не можете себе позволить"/>
+              <a class="popular-item__link" href="">Подробнее</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="page-section slider">
-        <h2 class="visuallyhidden">Преимущества наших офигенных часов, которые вы всё равно не сможете себе позволить</h2>
+        <div class="page-container slider__container">
+          <h2 class="visuallyhidden">Преимущества наших офигенных часов, которые вы всё равно не сможете себе позволить</h2>
 
-        <ul class="slider__items">
-          <li class="slider__item">
-            <div class="ad-banner">
-              <img class="ad-banner__image" src="https://via.placeholder.com/521x414.png" alt="Часы, которые вы не можете себе позволить. Крупным планом.">
-              <div class="ad-banner__content">
-                <h3 class="page-section__title  ad-banner__title">Подлинное качество</h3>
-                <div class="ad-banner__text">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</div>
-                <a class="ad-banner__link button button--beige-medium" href="/">Смотреть каталог</a>
+          <ul class="slider__items">
+            <li class="slider__item">
+              <div class="showcase">
+                <img class="showcase__image" src="https://via.placeholder.com/521x414.png" alt="Часы, которые вы не можете себе позволить. Крупным планом.">
+                <div class="showcase__content">
+                  <h3 class="page-section__title showcase__title">Подлинное качество</h3>
+                  <div class="showcase__text">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</div>
+                  <a class="showcase__link button button--beige-medium" href="/">Смотреть каталог</a>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
 
-        <div class="slider-controls">
-          <button type="button" class="slider-controls__arrow"> &lt; </button>
-          <span class="slider-controls__counter"> 01 </span>
-          <button type="button" class="slider-controls__arrow"> > </button>
+          <div class="slider-controls">
+            <button type="button" class="slider-controls__arrow"> &lt; </button>
+            <span class="slider-controls__counter"> 01 </span>
+            <button type="button" class="slider-controls__arrow"> > </button>
+          </div>
         </div>
       </section>
 
       <section class="page-section follow-us">
-        <div class="follow-us__container">
+        <div class="page-container follow-us__container">
           <div class="follow-us__content">
             <h2 class="follow-us__content-title page-section__title ">Следите за нашими новостями</h2>
 
@@ -178,91 +215,94 @@
             </li>
           </ul>
         </div>
+      </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <h2 class="visuallyhidden">Контакты и важные ссылки</h2>
+      <div class="page-container page-footer__container">
+        <h2 class="visuallyhidden">Контакты и важные ссылки</h2>
 
-      <section class="page-footer__section">
-        <h3 class="page-footer__section-title visuallyhidden">Контакты компании</h3>
+        <section class="page-footer__section">
+          <h3 class="page-footer__section-title visuallyhidden">Контакты компании</h3>
 
-        <div class="logo logo--footer"></div>
+          <div class="logo logo--footer"></div>
 
-        <ul class="page-footer__items">
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="tel:8(499)450-47-97">8 (499) 450-47-97</a>
-          </li>
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
-          </li>
-        </ul>
-      </section>
+          <ul class="page-footer__items">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="tel:8(499)450-47-97">8 (499) 450-47-97</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="page-footer__section">
-        <h3 class="page-footer__section-title">О компании</h3>
+        <section class="page-footer__section">
+          <h3 class="page-footer__section-title">О компании</h3>
 
-        <ul class="page-footer__items">
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Наши магазины</a>
-          </li>
+          <ul class="page-footer__items">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Наши магазины</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Вакансии</a>
-          </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Вакансии</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Сертификаты</a>
-          </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Сертификаты</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Отзывы</a>
-          </li>
-        </ul>
-      </section>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Отзывы</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="page-footer__section">
-        <h3 class="page-footer__section-title">Покупателям</h3>
+        <section class="page-footer__section">
+          <h3 class="page-footer__section-title">Покупателям</h3>
 
-        <ul class="page-footer__items">
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Каталог товаров</a>
-          </li>
+          <ul class="page-footer__items">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Каталог товаров</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Как заказать?</a>
-          </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Как заказать?</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">FAQ</a>
-          </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">FAQ</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Корпоративным клиентам</a>
-          </li>
-        </ul>
-      </section>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Корпоративным клиентам</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="page-footer__section">
-        <h3 class="page-footer__section-title">Оплата и доставка</h3>
+        <section class="page-footer__section">
+          <h3 class="page-footer__section-title">Оплата и доставка</h3>
 
-        <ul class="page-footer__items">
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Способы оплаты</a>
-          </li>
+          <ul class="page-footer__items">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Способы оплаты</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Время доставки</a>
-          </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Время доставки</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Гарантии и ремонт</a>
-          </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Гарантии и ремонт</a>
+            </li>
 
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="/">Возврат и компенсация</a>
-          </li>
-        </ul>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="/">Возврат и компенсация</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </footer>
   </body>
