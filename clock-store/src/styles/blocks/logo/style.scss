@@ -12,3 +12,14 @@
     color: $dust-darker;
   }
 }
+
+.logo--footer {
+  position: relative;
+  top: -10px;
+
+  .logo__icon {
+    width: 120px;
+    height: 27px;
+    color: $white-medium;
+  }
+}
