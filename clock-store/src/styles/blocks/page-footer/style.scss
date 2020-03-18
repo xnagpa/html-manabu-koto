@@ -6,28 +6,25 @@
   &__container {
     width: 1020px;
     display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
   }
 
   &__section {
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
-    margin-right: 147px;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   &__section-title {
     margin: 0;
     color: $white-medium;
     text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   &__items {
     padding-left: 0;
-    margin-top: 30px;
+    margin-top: 24px;
     list-style: none;
   }
 
