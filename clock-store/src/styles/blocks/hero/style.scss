@@ -1,5 +1,14 @@
 .hero {
   margin: 0 auto;
+
+  &__socials {
+    align-self: center;
+    list-style: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .hero-view {

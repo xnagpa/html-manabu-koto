@@ -1,0 +1,27 @@
+.socials--horizontal {
+  display: flex;
+
+  .socials__item {
+    margin-right: 15px;
+  }
+
+  .socials__item:last-child {
+    margin-right: 0;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+// Здесь ругается Stylint. Я не понимаю, почему
+.socials--vertical {
+  .socials__item {
+    margin-bottom: 13px;
+  }
+
+  .socials__item:last-child {
+    margin-bottom: 0;
+  }
+}
