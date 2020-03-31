@@ -6,7 +6,10 @@
   box-sizing: border-box;
 
   &--main-page {
-    display: flex;
     width: 1300px;
+  }
+
+  &--flex {
+    display: flex;
   }
 }
