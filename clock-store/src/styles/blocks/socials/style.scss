@@ -1,9 +1,15 @@
-.socials--horizontal {
-  display: flex;
-
-  .socials__item {
+.socials__item {
+  .socials--horizontal & {
     margin-right: 15px;
   }
+
+  .socials--vertical & {
+    margin-bottom: 13px;
+  }
+}
+
+.socials--horizontal {
+  display: flex;
 
   .socials__item:last-child {
     margin-right: 0;
@@ -15,12 +21,7 @@
   }
 }
 
-// Здесь ругается Stylint. Я не понимаю, почему
 .socials--vertical {
-  .socials__item {
-    margin-bottom: 13px;
-  }
-
   .socials__item:last-child {
     margin-bottom: 0;
   }
