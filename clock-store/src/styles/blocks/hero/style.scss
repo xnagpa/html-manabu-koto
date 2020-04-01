@@ -1,5 +1,15 @@
 .hero {
   margin: 0 auto;
+
+  &__socials {
+    align-self: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.hero__page-container {
+  display: flex;
 }
 
 .hero-view {

@@ -1,0 +1,27 @@
+.socials {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+  &--horizontal {
+    display: flex;
+  }
+}
+
+.socials__item {
+  .socials--horizontal & + & {
+    margin-left: 15px;
+  }
+
+  .socials--vertical & + & {
+    margin-top: 13px;
+  }
+}
+
+.icon {
+  .socials--horizontal & {
+    width: 22px;
+    height: 22px;
+  }
+}
