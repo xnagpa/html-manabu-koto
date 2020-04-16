@@ -17,7 +17,7 @@
   }
 
   &__link {
-    display: block;
+    display: flex;
     position: relative;
     font-size: 16px;
     color: $dust-darkest;
@@ -37,19 +37,13 @@
 }
 
 .product-card--popular {
-  .product-card__link {
-    margin-left: 40px;
-  }
-
+  // Вижу, что одинаково, но не знаю куда вынести
   .product-card__link::before {
     content: '';
     width: 30px;
     height: 1px;
-
-    position: absolute;
-    top: 50%;
-    left: -40px;
-    transform: translateY(50%);
+    margin-top: 10px;
+    margin-right: 18px;
     background-color: $dust-medium;
   }
 }
@@ -82,13 +76,15 @@
 
   .product-card__link {
     margin-top: 300px;
-    margin-left: 65px;
   }
 
   .product-card__link::before {
     content: '';
     width: 50px;
-    left: -65px;
+    height: 1px;
+    margin-top: 10px;
+    margin-right: 18px;
+    background-color: $dust-medium;
   }
 }
 
