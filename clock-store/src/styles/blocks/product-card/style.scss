@@ -1,6 +1,6 @@
 .product-card {
   position: relative;
-  
+
   &__title {
     margin-bottom: 0;
     margin-top: 0;
@@ -10,8 +10,8 @@
   }
 
   &__price {
-    font-size: 12px;
     margin-top: 10px;
+    font-size: 12px;
     font-family: $prata-font-family;
   }
 
