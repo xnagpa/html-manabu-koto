@@ -22,7 +22,7 @@
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: $$white;
+    color: $white
   }
 
   &__items {
@@ -44,7 +44,7 @@
     color: $transparent-white;
 
     &:hover {
-      color: $$white;
+      color: $white
     }
 
     &:focus {
