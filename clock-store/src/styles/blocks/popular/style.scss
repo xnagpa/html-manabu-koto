@@ -1,38 +1,15 @@
 .popular {
   min-height: 768px;
+  font-family: $playfair-font-family;
 
   &__container {
-    width: 1175px;
+    width: 1170px;
   }
 
-  .popular-item {
-    &__title {
-      font-size: 18px;
-      font-weight: bold;
-      font-family: $playfair-font-family;
-      text-transform: uppercase;
-    }
-
-    &__price {
-      font-size: 16px;
-      font-family: $prata-font-family;
-    }
-
-    &__link {
-      font-family: $playfair-font-family;
-      color: $dust-darkest;
-
-      &:hover {
-        color: $gray-lighter;
-      }
-
-      &:focus {
-        color: $gray-darker;
-      }
-
-      &:active {
-        color: $gray-medium;
-      }
-    }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
   }
 }
