@@ -7,9 +7,23 @@
   }
 
   &__items {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(6, 185px);
+    grid-template-rows: 2;
     padding-left: 0;
     list-style: none;
   }
+}
+
+.popular-card--narrow {
+  grid-column: span 2;
+}
+
+.popular-card--wide {
+  grid-column: span 4;
+}
+
+.popular-card--rectangle {
+  grid-column: span 3;
 }

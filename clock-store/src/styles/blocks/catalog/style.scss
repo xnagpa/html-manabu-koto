@@ -1,5 +1,14 @@
 .catalog {
-  min-height: 1576px;
+  &__items {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 185px);
+    grid-auto-flow: row dense;
+  }
+
+  &__item {
+    grid-column: span 1;
+  }
 }
 
 .catalog-pagination {
