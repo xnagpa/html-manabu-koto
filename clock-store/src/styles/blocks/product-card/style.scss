@@ -36,18 +36,6 @@
   }
 }
 
-.product-card--popular {
-  // Вижу, что одинаково, но не знаю куда вынести
-  .product-card__link::before {
-    content: '';
-    width: 30px;
-    height: 1px;
-    align-self: center;
-    margin-right: 18px;
-    background-color: $dust-medium;
-  }
-}
-
 // NOTE: Оставляю, чтобы потом забрать отсюда стили, если понадобится
 
 // .product-card--narrow {

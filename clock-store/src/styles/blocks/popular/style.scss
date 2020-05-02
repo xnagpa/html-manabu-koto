@@ -14,16 +14,27 @@
     padding-left: 0;
     list-style: none;
   }
-}
 
-.popular-card--narrow {
-  grid-column: span 2;
-}
+  &__item {
+    .product-card__link::before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      align-self: center;
+      margin-right: 18px;
+      background-color: $dust-medium;
+    }
+  }
 
-.popular-card--wide {
-  grid-column: span 4;
-}
+  &__item--narrow {
+    grid-column: span 2;
+  }
 
-.popular-card--rectangle {
-  grid-column: span 3;
+  &__item--wide {
+    grid-column: span 4;
+  }
+
+  &__item--rectangle {
+    grid-column: span 3;
+  }
 }
