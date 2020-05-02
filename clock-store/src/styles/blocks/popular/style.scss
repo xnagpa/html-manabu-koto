@@ -7,9 +7,62 @@
   }
 
   &__items {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(6, 185px);
+    grid-template-rows: 467px 220px;
     padding-left: 0;
     list-style: none;
+  }
+
+  &__item {
+    .product-card__link::before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      align-self: center;
+      margin-right: 18px;
+      background-color: $dust-medium;
+    }
+  }
+
+  &__item--narrow {
+    grid-column: span 2;
+    padding: 40px;
+
+    .product-card__image {
+      margin-top: 5px;
+    }
+
+    .product-card__link {
+      margin-top: 35px;
+    }
+  }
+
+  &__item--wide {
+    grid-column: span 4;
+    padding: 55px;
+
+    .product-card__image {
+      top: -5px;
+    }
+
+    .product-card__link {
+      margin-top: 315px;
+    }
+  }
+
+  &__item--rectangle {
+    grid-column: span 3;
+    padding: 40px;
+    padding-right: 0;
+
+    & + & {
+      margin-right: 0;
+    }
+
+    .product-card__link {
+      margin-top: 80px;
+    }
   }
 }

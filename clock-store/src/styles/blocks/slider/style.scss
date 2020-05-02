@@ -5,4 +5,12 @@
   &__container {
     width: 965px;
   }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    width: 360px;
+  }
 }
