@@ -7,8 +7,10 @@
   }
 
   &__items {
-    display: grid;
-    grid-gap: 80px;
-    grid-template-columns: repeat(3, 320px);
+    display: flex;
+  }
+
+  &__item {
+    width: 360px;
   }
 }
