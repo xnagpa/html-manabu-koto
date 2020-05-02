@@ -11,8 +11,4 @@
     grid-gap: 80px;
     grid-template-columns: repeat(3, 320px);
   }
-
-  &__item {
-    grid-column: span 1;
-  }
 }

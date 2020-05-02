@@ -5,10 +5,6 @@
     grid-template-columns: repeat(3, 185px);
     grid-auto-flow: row dense;
   }
-
-  &__item {
-    grid-column: span 1;
-  }
 }
 
 .catalog-pagination {
