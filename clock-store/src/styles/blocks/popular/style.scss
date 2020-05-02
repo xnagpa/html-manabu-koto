@@ -28,13 +28,41 @@
 
   &__item--narrow {
     grid-column: span 2;
+    padding: 40px;
+
+    .product-card__image {
+      margin-top: 5px;
+    }
+
+    .product-card__link {
+      margin-top: 35px;
+    }
   }
 
   &__item--wide {
     grid-column: span 4;
+    padding: 55px;
+
+    .product-card__image {
+      top: -5px;
+    }
+
+    .product-card__link {
+      margin-top: 315px;
+    }
   }
 
   &__item--rectangle {
     grid-column: span 3;
+    padding: 40px;
+    padding-right: 0;
+
+    & + & {
+      margin-right: 0;
+    }
+
+    .product-card__link {
+      margin-top: 120px;
+    }
   }
 }
