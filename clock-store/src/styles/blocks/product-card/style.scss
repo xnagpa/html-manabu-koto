@@ -1,6 +1,28 @@
 .product-card {
   position: relative;
   background-color: $gray-lightest;
+  padding: 20px;
+
+  &__actions {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__image {
+    margin: 0 auto;
+  }
+
+  &__action {
+    border: none;
+  }
 
   &__title {
     margin-bottom: 0;

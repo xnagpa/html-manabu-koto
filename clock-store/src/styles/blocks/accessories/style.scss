@@ -1,3 +1,8 @@
 .accessories {
-  min-height: 621px;
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    align-self: flex-end;
+  }
 }
