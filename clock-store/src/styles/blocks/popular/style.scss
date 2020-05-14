@@ -1,16 +1,28 @@
 .popular {
   min-height: 768px;
+  margin-bottom: 80px;
   font-family: $playfair-font-family;
 
   &__container {
-    width: 1170px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    align-self: flex-end;
+    font-family: $roboto-font-family;
+    font-size: 16px;
   }
 
   &__items {
     display: grid;
-    grid-gap: 40px;
-    grid-template-columns: repeat(6, 185px);
+    grid-row-gap: 40px;
+    // Шо поделать. Только так я смог сделать pixel-perfect. Спасибо, что не по пикселю.
+    // Господи, прости меня за это
+    grid-template-columns: repeat(234, 5px);
     grid-template-rows: 467px 220px;
+    margin-top: 25px;
+    margin-bottom: 0;
     padding-left: 0;
     list-style: none;
   }
@@ -27,7 +39,9 @@
   }
 
   &__item--narrow {
-    grid-column: span 2;
+    width: 370px;
+    box-sizing: border-box;
+    grid-column: span 74;
     padding: 40px;
 
     .product-card__image {
@@ -35,30 +49,46 @@
     }
 
     .product-card__link {
-      margin-top: 35px;
+      margin-top: 0;
     }
   }
 
   &__item--wide {
-    grid-column: span 4;
+    width: 760px;
+    box-sizing: border-box;
+    grid-column: span 152;
+    grid-column-end: -1;
     padding: 55px;
+
+    .product-card__title {
+      font-size: 18px;
+    }
+
+    .product-card__price {
+      font-size: 16px;
+    }
 
     .product-card__image {
       top: -5px;
     }
 
     .product-card__link {
-      margin-top: 315px;
+      margin-top: 300px;
     }
   }
 
   &__item--rectangle {
-    grid-column: span 3;
+    box-sizing: border-box;
+    grid-column: span 113;
     padding: 40px;
     padding-right: 0;
 
     & + & {
       margin-right: 0;
+    }
+
+    &:last-child {
+      grid-column-end: -1;
     }
 
     .product-card__link {
