@@ -2,6 +2,7 @@
   position: relative;
   background-color: $gray-lightest;
   padding: 20px;
+  box-sizing: border-box;
 
   &__actions {
     position: absolute;

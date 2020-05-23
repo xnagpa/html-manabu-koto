@@ -38,7 +38,6 @@
 
   &__item--narrow {
     width: 370px;
-    box-sizing: border-box;
     grid-column: span 74;
     padding: 40px;
 
@@ -53,7 +52,6 @@
 
   &__item--wide {
     width: 760px;
-    box-sizing: border-box;
     grid-column: span 152;
     grid-column-end: -1;
     padding: 55px;
@@ -76,7 +74,6 @@
   }
 
   &__item--rectangle {
-    box-sizing: border-box;
     grid-column: span 113;
     padding: 40px;
     padding-right: 0;
