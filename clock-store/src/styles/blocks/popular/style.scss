@@ -13,12 +13,8 @@
   }
 
   &__items {
-    display: grid;
-    grid-row-gap: 40px;
-    // Шо поделать. Только так я смог сделать pixel-perfect. Спасибо, что не по пикселю.
-    // Господи, прости меня за это
-    grid-template-columns: repeat(234, 5px);
-    grid-template-rows: 467px 220px;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 25px;
     margin-bottom: 0;
     padding-left: 0;
@@ -38,8 +34,10 @@
 
   &__item--narrow {
     width: 370px;
-    grid-column: span 74;
-    padding: 40px;
+    // Почему-то product-card перебивает этот padding
+    padding: 40px !important;
+    margin-right: 25px;
+    margin-bottom: 30px;
 
     .product-card__image {
       margin-top: 5px;
@@ -52,9 +50,9 @@
 
   &__item--wide {
     width: 760px;
-    grid-column: span 152;
-    grid-column-end: -1;
-    padding: 55px;
+    // Почему-то product-card перебивает этот padding
+    padding: 55px !important;
+    margin-bottom: 30px;
 
     .product-card__title {
       font-size: 18px;
@@ -65,25 +63,24 @@
     }
 
     .product-card__image {
+      position: absolute;
       top: -5px;
+      right: 45px;
     }
 
     .product-card__link {
-      margin-top: 300px;
+      margin-top: 290px;
     }
   }
 
   &__item--rectangle {
-    grid-column: span 113;
-    padding: 40px;
+    width: 565px;
+    // Почему-то product-card перебивает этот padding
+    padding: 40px !important;
     padding-right: 0;
 
-    & + & {
-      margin-right: 0;
-    }
-
     &:last-child {
-      grid-column-end: -1;
+      margin-left: 25px;
     }
 
     .product-card__link {
