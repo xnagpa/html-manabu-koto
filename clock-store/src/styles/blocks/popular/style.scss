@@ -47,7 +47,6 @@
 
   &__item--narrow {
     width: 370px;
-    // Почему-то product-card перебивает этот padding
     padding: 40px;
     margin-right: 25px;
     margin-bottom: 30px;
@@ -62,8 +61,8 @@
   }
 
   &__item--wide {
-    width: 760px;
-    // Почему-то product-card перебивает этот padding
+    flex-basis: 65%;
+    flex-grow: 1;
     padding: 55px;
     margin-bottom: 30px;
 
@@ -87,7 +86,8 @@
   }
 
   &__item--rectangle {
-    width: 565px;
+    flex-grow: 1;
+    // width: 565px;
     // Почему-то product-card перебивает этот padding
     padding: 40px;
     padding-right: 0;
