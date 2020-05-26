@@ -23,9 +23,14 @@
   }
 
   &__action {
+    padding: 0;
     border: none;
     background-color: transparent;
     outline: none;
+
+    & + & {
+      margin-left: 10px;
+    }
   }
 
   &__title {
