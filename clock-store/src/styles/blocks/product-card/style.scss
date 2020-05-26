@@ -23,28 +23,27 @@
   }
 
   &__action {
+    width: 25px;
     padding: 0;
     border: none;
     background-color: transparent;
     outline: none;
-
-    & + & {
-      margin-left: 10px;
-    }
+    cursor: pointer;
   }
 
   &__title {
     margin-bottom: 0;
     margin-top: 0;
     font-size: 14px;
-    font-family: $playfair-font-family-bold;
+    font-family: $roboto-font-family-bold;
     text-transform: uppercase;
   }
 
   &__price {
-    margin-top: 10px;
-    font-size: 12px;
-    font-family: $prata-font-family;
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: $roboto-font-family;
+    color: $gray-darker;
   }
 
   &__link {
