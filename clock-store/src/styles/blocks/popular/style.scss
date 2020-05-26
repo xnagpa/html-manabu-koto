@@ -3,6 +3,11 @@
   margin-bottom: 80px;
   font-family: $playfair-font-family;
 
+  .product-card__title {
+    font-family: $playfair-font-family;
+    font-weight: bold;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;

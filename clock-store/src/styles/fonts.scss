@@ -1,11 +1,12 @@
 @font-face {
-  font-family: RobotoRegular;
+  font-family: Roboto;
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
-  font-family: RobotoBold;
+  font-family: Roboto;
   src: url("../fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: bold;
 }
 
 @font-face {
@@ -14,10 +15,10 @@
 }
 
 @font-face {
-  font-family: PlayfairDisplayBold;
+  font-family: PlayfairDisplay;
   src: url("../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf");
+  font-weight: bold;
 }
-
 
 @font-face {
   font-family: Prata;
