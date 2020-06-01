@@ -3,8 +3,9 @@
     display: grid;
     grid-column-gap: 40px;
     grid-row-gap: 50px;
-    grid-template-columns: repeat(3, 252px);
     grid-auto-flow: row dense;
+    grid-template-columns: repeat(3, 252px);
+    grid-template-rows: repeat(4, 300px);
     padding-left: 0;
     list-style: none;
   }

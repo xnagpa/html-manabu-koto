@@ -8,12 +8,15 @@
   }
 
   &__item {
-    width: 360px;
-    height: 374px;
-    padding: 20px;
+    flex-shrink: 0;
 
-    &:last-child {
-      margin-right: 0;
+    .product-card {
+      width: 360px;
+      height: 375px;
+    }
+
+    & + & {
+      margin-left: 40px;
     }
   }
 }
