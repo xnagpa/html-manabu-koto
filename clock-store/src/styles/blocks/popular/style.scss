@@ -1,19 +1,17 @@
 .popular {
   min-height: 768px;
   margin-bottom: 80px;
-  font-family: $playfair-font-family;
 
   .product-card__title {
-    font-family: $playfair-font-family;
     font-weight: bold;
-    color: $dark-gray-darker;
+    color: $gray-darkest;
   }
 
   .product-card__price {
     margin-top: 10px;
     font-family: $prata-font-family;
     font-size: 12px;
-    color: $dark-gray-darker;
+    color: $gray-darkest;
   }
 
   &__container {
@@ -35,6 +33,8 @@
   }
 
   &__item {
+    font-family: $playfair-font-family;
+
     .product-card__link::before {
       content: "";
       width: 30px;
@@ -87,8 +87,6 @@
 
   &__item--rectangle {
     flex-grow: 1;
-    // width: 565px;
-    // Почему-то product-card перебивает этот padding
     padding: 40px;
     padding-right: 0;
 
