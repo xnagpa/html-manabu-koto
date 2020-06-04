@@ -34,7 +34,7 @@
   }
 
   &__action {
-    width: 27px;
+    width: 18px;
     padding: 0;
     border: none;
     background-color: transparent;
@@ -77,6 +77,10 @@
       color: $gray-medium;
     }
   }
+}
+
+.product-card__action--add-to-favorites {
+  margin-right: 11px;
 }
 
 .product-card__image--absolute {
