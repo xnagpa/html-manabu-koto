@@ -34,12 +34,23 @@
   }
 
   &__action {
+    position: relative;
     width: 18px;
     padding: 0;
     border: none;
     background-color: transparent;
     outline: none;
     cursor: pointer;
+    z-index: 999;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 40px;
+    }
 
     SVG {
       margin: 0 auto;
