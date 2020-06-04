@@ -2,7 +2,7 @@
   &__items {
     display: grid;
     grid-column-gap: 40px;
-    grid-row-gap: 50px;
+    grid-row-gap: 40px;
     grid-auto-flow: row dense;
     grid-template-columns: repeat(3, 252px);
     grid-auto-rows: 300px;
