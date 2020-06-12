@@ -1,0 +1,97 @@
+.product-card {
+  position: relative;
+  background-color: violet;//$gray-lightest;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: $roboto-font-family;
+  font-size: 14px;
+
+  &__actions {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  &__info {
+    z-index: 1;
+    position: relative;
+  }
+
+  &__image-wrapper {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    margin: 0 auto;
+    max-height: 100%;
+  }
+
+  &__action {
+    position: relative;
+    width: 18px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    z-index: 999;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -5px;
+      right: -5px;
+      bottom: -10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    position: relative;
+    margin-top: 5px;
+    color: $gray-darker;
+  }
+
+  &__link {
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    color: $dust-darkest;
+
+    &:hover {
+      color: $gray-lighter;
+    }
+
+    &:focus {
+      color: $gray-darker;
+    }
+
+    &:active {
+      color: $gray-medium;
+    }
+  }
+}
+
+.product-card__action--add-to-favorites {
+  margin-right: 11px;
+}
+
+.product-card__image--absolute {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}

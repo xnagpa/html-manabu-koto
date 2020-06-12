@@ -1,16 +1,22 @@
 .slider {
-  min-height: 519px;
   margin: 0 auto;
-
-  &__container {
-    width: 965px;
-  }
 
   &__items {
     display: flex;
+    padding-left: 0;
+    list-style: none;
   }
 
   &__item {
-    width: 360px;
+    flex-shrink: 0;
+
+    .product-card {
+      width: 360px;
+      height: 375px;
+    }
+
+    & + & {
+      margin-left: 40px;
+    }
   }
 }
