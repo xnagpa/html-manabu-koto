@@ -88,9 +88,11 @@
 
     .product-card__image-wrapper {
       top: 0;
-      right: -185px;
-      left: 0;
-      bottom: -25px;
+      right: 0;
+      left: 220px;
+      bottom: 0;
+      width: 490px;
+      height: 492px;
     }
 
     .product-card__link {
@@ -114,10 +116,12 @@
     }
 
     .product-card__image-wrapper {
-      top: -10px;
-      right: -115px;
-      left: 0;
-      bottom: -10px;
+      top: 10px;
+      right: 0;
+      left: 240px;
+      bottom: 0;
+      width: 200px;
+      height: 200px;
     }
 
     .product-card__price {
