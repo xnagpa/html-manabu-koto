@@ -21,12 +21,11 @@
   font-size: 16px;
   font-family: $prata-font-family;
 
-  &__text {
-
-  }
-
   &__price::after,
   &__dimensions::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     content: "";
     width: 50px;
     height: 1px;
@@ -36,20 +35,25 @@
   }
 
   &__price {
-    display: flex;
-    align-self: flex-start;
-    margin-top: 83px;
+    position: absolute;
+    top: 70px;
+    left: -100px;
+    letter-spacing: 1px;
 
     &::after {
-      margin-right: 0;
-      margin-left: 18px;
+      left: 90px;
     }
   }
 
   &__dimensions {
-    display: flex;
-    align-self: flex-end;
-    margin-bottom: 111px;
+    position: absolute;
+    bottom: 94px;
+    right: -106px;
+    letter-spacing: 1px;
+
+    &::before {
+      right: 115px;
+    }
   }
 
   &__image {
@@ -60,13 +64,13 @@
 
 .hero-product {
   display: flex;
+  align-items: center;
   padding-left: 45px;
 
   &__content {
-    flex-basis: 40%;
+    flex-basis: 72%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin-top: -50px;
   }
 
@@ -85,7 +89,8 @@
       width: 50px;
       height: 1px;
       align-self: center;
-      margin-right: 18px;
+      margin-right: 8px;
+      margin-top: 13px;
       background-color: $dust-medium;
     }
   }
@@ -102,11 +107,11 @@
   &__text {
     max-width: 258px;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 61px;
     margin-left: 60px;
     font-size: 14px;
     font-weight: 300;
-    line-height: 1.52;
+    line-height: 1.4;
     color: $dark-gray-darker;
   }
 
@@ -114,6 +119,8 @@
     box-sizing: border-box;
     width: 205px;
     margin-top: 0;
-    margin-left: 60px;
+    margin-left: 53px;
+    padding: 24px 35px;
+    letter-spacing: 1px;
   }
 }
